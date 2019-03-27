@@ -1,7 +1,7 @@
 @import '~bootstrap/scss/bootstrap';
 
 $white:#FFFFFF;
-$salmon:#FF7369;
+$salmon:#F75A60;
     
     .imglogo{
         width:10%;
@@ -20,9 +20,14 @@ $salmon:#FF7369;
     .ic-discover ,.ic-mensajes,.ic-activity,.ic-event,.ic-search,.ic-event{
         filter:invert(75%);
     }
-    
-    
-   
+     
+    .active{
+        color:$salmon;
+    }
+     path{
+         fill: currentColor;
+     }
+     
 
 
 

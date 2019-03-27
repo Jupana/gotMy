@@ -7,8 +7,8 @@
     </div> 
     <div class="col-md-4"> 
         <ul class="navbar-nav text-center">
-            <li class="nav-item active">
-                <img  class="img-fluid ic-discover " src="{{ asset('iconos/ic-discover.svg','imgdiscover') }}" />
+            <li class="nav-item active menu-color">
+                {{source('@public_path'~asset('/img/iconos/ic-discover.svg')) }}
                 <a class="nav-link"  href="{{ path('index') }}">Discover <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
