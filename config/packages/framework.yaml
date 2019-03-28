@@ -19,16 +19,7 @@ framework:
         packages:
             imagenlogo:
                 base_path: 'img'
-            imgdiscover:
-                base_path: 'img'
-            imgsearch:
-                base_path: 'img'
-            imgevent:
-                base_path: 'img'
-            imgmensajes:
-                base_path: 'img'
-            imgactivity:
-                base_path: 'img'
+         
 
 
 
