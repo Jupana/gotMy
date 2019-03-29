@@ -1,35 +1,39 @@
-   <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-    <div class="col-md-3 navbar-brand fs-80 font-weight-bold">
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
+    <div class="navbar-brand fs-80 font-weight-bold">
         <span class="mr-n4" >g</span>
         <img class="img-fluid imglogo" src="{{ asset('Simbolo/GotMy-whiteIcon.png','imagenlogo') }}" />
         <span class="ml-n4 mr-n4">t</span>
         <span class="my">my</span>
     </div> 
-    <div class="col-md-6"> 
-        <ul class="navbar-nav text-center">
-            <li class="nav-item active ">
-                {{source('@public_path'~asset('/img/iconos/ic-discover.svg')) }}
-                <a class="nav-link"  href="{{ path('index') }}">Discover <span class="sr-only">(current)</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse menu" id="navbarSupportedContent"> 
+        <ul class="navbar-nav  text-center">
+            <li class="nav-item  active ">
+                <a class="size_iconNav" href="{{ path('index') }}">{{source('@public_path'~asset('/img/iconos/ic-discover.svg')) }}</a>
+                <a class="nav-link "  href="{{ path('index') }}">Discover <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
-                {{source('@public_path'~asset('/img/iconos/ic-search.svg')) }}
+            <li class="nav-item ">
+                <a class="size_iconNav"href="#">{{source('@public_path'~asset('/img/iconos/ic-search.svg')) }}</a>
                 <a class="nav-link" href="#">Search</a>
             </li>
-            <li class="nav-item">
-                {{source('@public_path'~asset('/img/iconos/ic-event.svg')) }}
+            <li class="nav-item ">
+                <a class="size_iconNav"href="#">{{source('@public_path'~asset('/img/iconos/ic-event.svg')) }}</a>
                 <a class="nav-link" href="#">Live Events</a>
             </li>
-            <li class="nav-item">
-                 {{source('@public_path'~asset('/img/iconos/ic-mensajes.svg')) }}
+            <li class="nav-item ">
+                <a class="size_iconNav"href="#">{{source('@public_path'~asset('/img/iconos/ic-mensajes.svg')) }}</a>
                 <a class="nav-link" href="#">Mensajes</a>
             </li>
-            <li class="nav-item">
-                {{source('@public_path'~asset('/img/iconos/ic-activity.svg')) }}
+            <li class="nav-item ">
+                <a class="size_iconNav"href="#">{{source('@public_path'~asset('/img/iconos/ic-activity.svg')) }}</a>
                 <a class="nav-link" href="#">Activity</a>
             </li>
         </ul> 
     </div> 
-    <div class="col-md-3">        
-        <a class="join fs-20 px-5 pt-2 pb-3 float-right" >Join gotmy for FREE</a> 
+    <div>    
+        <a class="join fs-20 px-5 pt-2 pb-3 text-white float-right" >Join gotmy for FREE</a>
     </div>     
+        
 </nav>

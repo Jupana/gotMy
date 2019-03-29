@@ -11,11 +11,11 @@
         <header>                                   
             {% include 'nav/mainNav.html.twig' %}
         </header>
-        <div class="container"> 
-            {% block body %}{% endblock %}
-        </div>    
+        <div class="super_container">
+             {% block body %}{% endblock %}  
+        </div> 
         <footer>
-		            
+		    {% include 'footer/footer.html.twig' %}      
 		</footer>  
         <script src="{{ asset('build/app.js') }}"></script>
         {% block javascripts %}{% endblock %}

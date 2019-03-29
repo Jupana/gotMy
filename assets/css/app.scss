@@ -1,4 +1,5 @@
 @import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:300,400,500,700,900');
 
 $white:#FFFFFF;
 $salmon:#F75A60;
@@ -6,49 +7,92 @@ $grey:#C0C0C0;
 $grey2:#696969;
 $colortext: #222121d7;
 
+/*General Stuff*/
+
 html,
-body {
-  color:$colortext;  
+body,img{
+    max-width: 100%;
+	margin: 0;
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+	text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+
+html,
+body
+{    
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	background: #FFFFFF;
+    color:$colortext; 
+  
+}
+.super_container
+{
+	width: 100%;
+	overflow: hidden;
 }
  
 header {
 	width: 100%;
 	position: fixed;
 	z-index: 10;
+}
+a, a:hover, a:visited, a:active, a:link
+  {
+    color: inherit;
+    text-decoration: none;
   }
+ul
+{
+	list-style: none;
+	margin-bottom: 0px;
+}  
 
 .color_salmon{
     color:$salmon;
 }
 
 .color_gris{
-    color:$grey2;
+    color:$grey;
 } 
-
+.titulo{
+    font-size:40px;
+}
 
 /*Main Navbar*/
     .imglogo{ 
-        @extend .pl-0;
-        width:15%;
+        width:10%;
     }
-    .join{    
-        @extend .text-white;
-        @extend .font-weight-bold;
+    .join{       
         border-radius: 30px;
         background-color:$salmon;
     }
     .my{
         color:$salmon; 
-    }  
-    .nav-item{    
-        @extend .m-auto;
-        color:$grey;     
+    } 
+    .menu{
+        margin-left:-200px;
+
+    } 
+    .nav-item{      
+        color:$grey;  
+        width: max-content; 
+        margin-right:45px;
+        
     }
     .active{
         color:$salmon;
     }
      path{
          fill: currentColor;
+     }
+
+     .size_iconNav svg{
+         width:60px;
+         height:35px;
      }
    
 /*Home*/     
@@ -76,9 +120,10 @@ header {
 	height: 100%;
 	background-repeat: no-repeat;
 	background-size: cover;
-    background-position: center center;
+    background-position: center;
     filter: saturate(30%);
-}
+    
+}    
 .home_slider_content
 {
 	position: absolute;
@@ -89,17 +134,16 @@ header {
 }
 .home_slider_title
 {
-	font-size: 50px;
-	font-weight: 500;
-	line-height: 1.2;
+	font-size: 60px;
+	line-height: 1.5;
 	color: $white;
 }
 .home_slider_subtitle
 {
-	font-size: 20px;
+	font-size: 25px;
 	color: $white;
     margin-top: 9px;
-    font-weight: 500;
+ 
 }
 
 .home_slider_form_container
@@ -119,19 +163,27 @@ header {
 
 .home_search_input
 {
-	width: 50%;
+	width: 100%;
 	border: none;
 	outline: none;
 	height: 25px;
 	padding-left: 15px;
 }
+.home_search_input::-webkit-input-placeholder
+{
+	font-size: 20px !important;
+}
+.h
 
 /*Features*/
 .features{
     margin-bottom:30px;
 }
+.feature_introducion{
+    margin-top:-120px;
+}
 .features_row{
-    margin-top:70px;
+    margin-top:50px;
 }
 .feature1{
     margin-top:100px;
@@ -153,9 +205,10 @@ header {
 }
 
 /*Events*/
+
 .events,.category,.videos{
     margin-top:20px;
-    margin-bottom: 60px;
+    margin-bottom: 70px;
 }
 .card{
     box-shadow: 0px 1px 10px rgba(29,34,47,0.1);
@@ -169,6 +222,10 @@ header {
 .map{
     color:$grey;
 }
+.size_iconStar svg{
+    width: 15px;
+    height: 10px;
+}
 
 .cont-img-card{
     position: relative;
@@ -177,10 +234,14 @@ header {
  
 .icono-encima{
     position: absolute;
-    top: 10px;
-    right: 10px;
-    
-  
+    top: 1px;
+    right: 1px;
+     
+}
+.size_icon svg{
+    width: 150px;
+    height: 100px;
+    color: $white;
 }
 
 .texto-encima{
@@ -190,12 +251,86 @@ header {
     font-weight: 500;
 }
 
-/*Upcoming Events*/
-.bookmark{
+.bookmark svg{
     color:$white;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.cuadro_encima{
+    width:100%;
+    background-color: rgb(48, 48, 51);
+    opacity: 0.7;
+    position: absolute;
+    bottom: 0;
+    left:4%;
 }
 
 
+/*Videos*/
+.video
+{
+	width: 100%;
+	padding-top:20px;
+    padding-bottom: 60px;
+    margin-bottom:100px;
+}
+.video_background
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.video_col
+{
+	margin-bottom: 60px;
+}
+.video_item
+{
+    width: 100%;
+    margin-left: 0;
+}
+.video_image
+{
+	width: 50%;
+	height: 45%;
+	border-radius: 20px;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: -96px;
+	z-index: 5;
+}
+.video_image img
+{
+	max-width: 100%;
+}
+.video_body
+{
+	float: left;
+	background: #FFFFFF;
+	border-radius: 6px;
+	box-shadow: 0px 1px 10px rgba(29,34,47,0.1);
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.video_item:hover .video_body
+{
+	box-shadow: 0px 5px 40px rgba(29,34,47,0.15);
+}
+
+/*Footer*/
+.footer{
+    padding-top:80px;
+    padding-bottom:20px;
+    width: 100%;
+}
 
 
 
@@ -208,16 +343,29 @@ header {
     .feature_introducion{
         margin-top:200px;
     }
-    .imglogo{ 
-        width:10% !important;
-    }
-   
+    
     .feature2{
         margin-top:95px;
        
     }
     .feature3{
         margin-top:30px;
+    }
+    .video_image
+	{
+		width: 160px;
+		height: 140px;
+    }
+    .video_col
+    {
+        margin-bottom: 150px;
+    }
+    .menu{
+        margin-left:-20px !important;
+    } 
+    .nav-item{       
+        margin-right:100px !important;
+        
     }
    
    
@@ -233,9 +381,36 @@ header {
 /*---col.(xs)--*/
 @media (max-width:575px){
   
-    .imglogo{ 
-        width:5% !important;
+    .home,.raya{
+        display: none;
     }
+    .features{
+        margin-top:330px;
+    }
+
+    .feature1,.feature2{
+        margin-top:10px !important;
+       
+    }
+ 
+    .video_col
+    {
+        margin-bottom: 150px;
+    }
+    .text_mobil_subtitulo{
+        font-size: 15px !important;
+    }
+    .text_mobil_titulo{
+        font-size: 25px !important;
+    }
+    .menu{
+        margin-left:0px;
+    } 
+    .nav-item{      
+        margin-right:0px;
+        
+    }
+
 } 
 
 
