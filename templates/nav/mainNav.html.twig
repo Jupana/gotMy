@@ -10,25 +10,25 @@
     </button>
     <div class="collapse navbar-collapse menu" id="navbarSupportedContent"> 
         <ul class="navbar-nav  text-center">
-            <li class="nav-item  active ">
-                <a class="size_iconNav" href="{{ path('index') }}">{{source('@public_path'~asset('/img/iconos/ic-discover.svg')) }}</a>
-                <a class="nav-link "  href="{{ path('index') }}">Discover <span class="sr-only">(current)</span></a>
+            <li class="nav-item" >
+                <a class="size_iconNav"id="op0" href="{{ path('index') }}">{{source('@public_path'~asset('/img/iconos/ic-discover.svg')) }}</a>
+                <a class="nav-link " id="op0t" href="{{ path('index') }}">Discover <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item" >
+                <a class="size_iconNav" id="op1" href="{{ path('viewerModeSearch') }}">{{source('@public_path'~asset('/img/iconos/ic-search.svg')) }}</a>
+                <a class="nav-link" id="op1t"href="{{ path('viewerModeSearch') }}">Search</a>
+            </li>
+            <li class="nav-item" >
+                <a class="size_iconNav" id="op2" href="{{path('viewerModeEvents')}}">{{source('@public_path'~asset('/img/iconos/ic-event.svg')) }}</a>
+                <a class="nav-link" id="op2t" href="{{path('viewerModeEvents')}}">Live Events</a>
             </li>
             <li class="nav-item ">
-                <a class="size_iconNav"href="#">{{source('@public_path'~asset('/img/iconos/ic-search.svg')) }}</a>
-                <a class="nav-link" href="#">Search</a>
+                <a class="size_iconNav" id="op3" href="#">{{source('@public_path'~asset('/img/iconos/ic-mensajes.svg')) }}</a>
+                <a class="nav-link" id="op3t" href="#">Mensajes</a>
             </li>
             <li class="nav-item ">
-                <a class="size_iconNav"href="#">{{source('@public_path'~asset('/img/iconos/ic-event.svg')) }}</a>
-                <a class="nav-link" href="#">Live Events</a>
-            </li>
-            <li class="nav-item ">
-                <a class="size_iconNav"href="#">{{source('@public_path'~asset('/img/iconos/ic-mensajes.svg')) }}</a>
-                <a class="nav-link" href="#">Mensajes</a>
-            </li>
-            <li class="nav-item ">
-                <a class="size_iconNav"href="#">{{source('@public_path'~asset('/img/iconos/ic-activity.svg')) }}</a>
-                <a class="nav-link" href="#">Activity</a>
+                <a class="size_iconNav" id="op4" href="#">{{source('@public_path'~asset('/img/iconos/ic-activity.svg')) }}</a>
+                <a class="nav-link"id="op4t" href="#">Activity</a>
             </li>
         </ul> 
     </div> 

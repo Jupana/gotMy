@@ -1,3 +1,10 @@
 index:
     path: /
     controller: App\Controller\HomeController::index
+    
+viewerModeSearch:
+    path: /viewerModeSearch
+    controller: App\Controller\ViewerModeController::search  
+viewerModeEvents:
+    path: /viewerModeEvents
+    controller: App\Controller\ViewerModeController::events        

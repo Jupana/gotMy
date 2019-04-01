@@ -1,6 +1,12 @@
 {% extends 'base.html.twig' %}
 
 {% block body %} 
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById("op0").style.color="salmon";
+            document.getElementById("op0t").style.color="white";
+        }
+    </script> 
     <!-- Home -->
 	<div class="home">
 		<div class="home_slider_container">		
@@ -23,7 +29,7 @@
                                             </div>								   
                                         </form> 
 									</div>
-                                     <div class="fs-20 text-white">Trending searches: influencer,instagram,fitness,love,house</div>								
+                                    <div class="fs-20 text-white p-t-10">Trending searches: influencer,instagram,fitness,love,house</div>								
 								</div>
 							</div>
 						</div>
@@ -40,7 +46,10 @@
 				<div class="col-md-12">
 					<div class=" feature_introducion text-center">
 						<h2 class="titulo text_mobil_titulo ">You´re In</h2>
-						<div class=" feature_text_intro text_mobil_subtitulo fs-25"><p>Talk face-to-face with anyone online,</br>either in a private video meeting or live group evente</p></div>
+						<div class=" feature_text_intro text_mobil_subtitulo fs-25">
+                            <div>Talk face-to-face with anyone online,</div>
+                            <div>either in a private video meeting or live group evente</div>
+                        </div>    
 					</div>
 				</div>
 			</div>
@@ -50,7 +59,7 @@
 					<div class="feature ">
 						<img class="feature_icon img-fluid " src="{{ asset('img/Captura3.png') }}" />
 						<h3 class="feature_title feature1 ">GET STARTED</h3>
-						<div class="feature_text"><p class="float-left">Register your gotmy account & <br/>discover increible live video events</p></div>
+						<div class="feature_text"><p class="float-left">Register your gotmy account & discover increible live video events</p></div>
                     </div>
 				</div>
 				<!-- Features Item -->
@@ -84,7 +93,7 @@
             </div>
 		</div>
 	</div>
-     <!-- Live Events -->
+    <!-- Live Events -->
     <div class="events">
         <div class="container">
             <div class="row">
@@ -170,7 +179,7 @@
             </div>
         </div>
     </div> 
-      <!-- Upcoming Events -->
+    <!-- Upcoming Events -->
     <div class="events">
         <div class="container">
             <div class="row">
@@ -207,12 +216,18 @@
                         </div>                    
                         <div class="card-body">
                             <div class="row">
-                                <div class="col-md-2"><p class="float-left"><span class="font-weight-bold">21</span></br><span class="font-weight-bold  color_salmon">DEC</span></p></div>
+                                <div class="col-md-2">
+                                    <div class="float-left">
+                                        <div class="font-weight-bold">21</div>
+                                        <div class="font-weight-bold  color_salmon">DEC</div>
+                                    </div>
+                                </div>
                                 <div class="col-md-10">
-                                    <p class="card-text"><span class="font-weight-bold ">String Live Event Title<span></br>
-                                        <span class="color_salmon">Games</span> </br>
-                                        <span class="map fs-15">{{source('@public_path'~asset('/img/iconos/ic-map.svg')) }}Live from New York,at 18:30</span>                        
-                                    </p>
+                                    <div class="card-text">
+                                        <div class="font-weight-bold ">String Live Event Title</div>
+                                        <div class="color_salmon">Games</div> 
+                                        <div class="map fs-15">{{source('@public_path'~asset('/img/iconos/ic-map.svg')) }}Live from New York,at 18:30</div>                        
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -250,12 +265,18 @@
                         </div>                    
                         <div class="card-body">
                             <div class="row">
-                                <div class="col-md-2"><p class="float-left"><span class="font-weight-bold">21</span></br><span class="font-weight-bold  color_salmon">DEC</span></p></div>
+                                <div class="col-md-2">
+                                    <div class="float-left">
+                                        <div class="font-weight-bold">21</div>
+                                        <div class="font-weight-bold  color_salmon">DEC</div>
+                                    </div>            
+                                </div>
                                 <div class="col-md-10">
-                                    <p class="card-text"><span class="font-weight-bold ">String Live Event Title<span></br>
-                                        <span class="color_salmon">Games</span> </br>
-                                        <span class="map fs-15">{{source('@public_path'~asset('/img/iconos/ic-map.svg')) }}Live from New York,at 18:30</span>                        
-                                    </p>
+                                    <div class="card-text">
+                                        <div class="font-weight-bold ">String Live Event Title</div>
+                                        <div class="color_salmon">Games</div> 
+                                        <div class="map fs-15">{{source('@public_path'~asset('/img/iconos/ic-map.svg')) }}Live from New York,at 18:30</div>                        
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -291,14 +312,18 @@
                                 </div>                         
                             </div>
                         </div>                    
-                        <div class="card-body">
+                        <div class="card-body ">
                             <div class="row">
-                                <div class="col-md-2"><p class="float-left"><span class="font-weight-bold">21</span></br><span class="font-weight-bold  color_salmon">DEC</span></p></div>
-                                <div class="col-md-10">
-                                    <p class="card-text"><span class="font-weight-bold ">String Live Event Title<span></br>
-                                        <span class="color_salmon">Games</span> </br>
-                                        <span class="map fs-15">{{source('@public_path'~asset('/img/iconos/ic-map.svg')) }}Live from New York,at 18:30</span>                        
-                                    </p>
+                                <div class="col-md-2">                 
+                                    <div class=" font-weight-bold">21</div>
+                                    <div class="font-weight-bold  color_salmon">DEC</div>                           
+                                </div>
+                                <div class="col-md-10 ">
+                                    <div class="card-text">
+                                        <div class="font-weight-bold ">String Live Event Title<div>
+                                        <div class="color_salmon ">Games</div> 
+                                        <div class="map fs-15">{{source('@public_path'~asset('/img/iconos/ic-map.svg')) }}Live from New York,at 18:30</div>                        
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -308,14 +333,15 @@
             </div>
         </div>
     </div>
+    </div>
 
     <!-- Discover Category -->
-      <div class="category ">
+    <div class="category ">
         <div class="container">
             <div class="row">
                 <div class="col-md-12"><p class="titulo float-left">Discover by Category</p></div>
                 <div class="col-md-2">
-                    <div class="card ">
+                    <div class="card">
                         <div class="cont-img-card">
                             <img class="card-img-top" src="{{ asset('img/categories/art-culture.jpg') }}"/>
                             <div class="texto-encima text-white fs-20 ">Art&Culture</div>

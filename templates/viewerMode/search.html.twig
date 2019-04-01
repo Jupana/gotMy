@@ -1,0 +1,340 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Viewer Profile!{% endblock %}
+
+{% block body %}
+  <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById("op1").style.color="salmon";
+             document.getElementById("op1t").style.color="white";
+        }
+    </script> 
+    <!-- Search -->
+	<div class=" bg-dark">
+		<div class="container ">
+			<div class="row ">
+				<div class="col text-center ">
+					<div class="home_slider_title"></div>
+					    <div class="home_slider_subtitle"></div>
+							<div class="home_slider_form_container">
+								<form action="#" id="home_search_form" class="home_search_form d-flex flex-lg-row flex-column align-items-center justify-content-between">
+                                    <div class="d-flex flex-row align-items-center justify-content-start">
+                                        {{source('@public_path'~asset('/img/iconos/ic-search.svg')) }}
+                                        <input type="search" class="home_search_input" placeholder="Search influencer name, live event, category, profession,skill,hobby,tag..." required="required">
+                                        <button type="submit" hidden></button>
+                                    </div>								   
+                                </form> 
+							</div>
+                            <div class="fs-20 text-white p-t-30 p-b-30">Trending searches: influencer,instagram,fitness,love,house</div>								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <!-- Treanding Influencers -->
+    <div class="influencers">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="titulo float-left p-t-30 p-b-30">Trending Influencers</p>
+                </div>
+                <div class="col-md-2">
+                    <div><img src="{{ asset('img/Captura6.png') }}" /></div>
+                    <div>Bess Thornton</div>
+                    <div>
+                        <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                        <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                        <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                        <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span> 
+                        <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>                                 
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div><img src="{{ asset('img/Captura7.png') }}" /></div>
+                    <div>Amy Peters</div>
+                    <div>
+                        <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                        <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                        <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                        <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span> 
+                        <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>                                 
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div><img src="{{ asset('img/Captura6.png') }}" /></div>
+                    <div>Bess Thornton</div>
+                    <div>
+                        <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                        <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                        <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                        <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span> 
+                        <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>                                 
+                    </div>
+                </div>
+                <div class="col-md-2">
+                     <div><img src="{{ asset('img/Captura7.png') }}" /></div>
+                    <div>Amy Peters</div>
+                    <div>
+                        <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                        <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                        <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                        <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span> 
+                        <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>                                 
+                    </div>
+                </div>
+                         <div class="col-md-2">
+                    <div><img src="{{ asset('img/Captura6.png') }}" /></div>
+                    <div>Bess Thornton</div>
+                    <div>
+                        <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                        <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                        <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                        <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span> 
+                        <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>                                 
+                    </div>
+                </div>
+                <div class="col-md-2">
+                     <div><img src="{{ asset('img/Captura7.png') }}" /></div>
+                    <div>Amy Peters</div>
+                    <div>
+                        <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                        <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                        <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                        <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span> 
+                        <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>                                 
+                    </div>
+                </div> 
+                      
+            </div>
+        </div>
+    </div>
+
+    <!-- Category -->
+      <div class="category ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 p-t-30 p-b-30"><p class="titulo float-left">Category</p></div>
+                <div class="col-md-2">
+                    <div class="card ">
+                        <div class="cont-img-card">
+                            <img class="card-img-top" src="{{ asset('img/categories/art-culture.jpg') }}"/>
+                            <div class="texto-encima text-white fs-20 ">Art&Culture</div>
+                        </div>                                 
+                    </div>         
+                </div>
+                 <div class="col-md-2">
+                    <div class="card ">
+                        <div class="cont-img-card">
+                            <img class="card-img-top" src="{{ asset('img/categories/business.jpg') }}"/>
+                            <div class="texto-encima text-white fs-20">Bussiness</div>
+                        </div>                                 
+                    </div>         
+                </div> 
+                 <div class="col-md-2">
+                    <div class="card ">
+                        <div class="cont-img-card">
+                            <img class="card-img-top" src="{{ asset('img/categories/carft.jpg') }}"/>
+                            <div class="texto-encima text-white fs-20 ">Carft</div>
+                        </div>                                 
+                    </div>         
+                </div> 
+                 <div class="col-md-2">
+                    <div class="card ">
+                        <div class="cont-img-card">
+                            <img class="card-img-top" src="{{ asset('img/categories/celebrity.jpg') }}"/>
+                            <div class="texto-encima text-white fs-20">Celebrity</div>
+                        </div>                                 
+                    </div>         
+                </div> 
+                 <div class="col-md-2">
+                    <div class="card ">
+                        <div class="cont-img-card">
+                            <img class="card-img-top" src="{{ asset('img/categories/education.jpg') }}"/>
+                            <div class="texto-encima text-white fs-20">Education</div>
+                        </div>                                 
+                    </div>         
+                </div> 
+                 <div class="col-md-2">
+                    <div class="card ">
+                        <div class="cont-img-card">
+                            <img class="card-img-top" src="{{ asset('img/categories/fashion.jpg') }}"/>
+                            <div class="texto-encima text-white fs-20">Fashion</div>
+                        </div>                                 
+                    </div>         
+                </div>  
+                 <div class="col-md-2">
+                    <div class="card ">
+                        <div class="cont-img-card">
+                            <img class="card-img-top" src="{{ asset('img/categories/instagrammer.jpg') }}"/>
+                            <div class="texto-encima text-white fs-20 ">Instagrammer</div>
+                        </div>                                 
+                    </div>         
+                </div> 
+                 <div class="col-md-2">
+                    <div class="card ">
+                        <div class="cont-img-card">
+                            <img class="card-img-top" src="{{ asset('img/categories/manga.jpg') }}"/>
+                            <div class="texto-encima text-white fs-20">Manga</div>
+                        </div>                                 
+                    </div>         
+                </div> 
+                 <div class="col-md-2">
+                    <div class="card ">
+                        <div class="cont-img-card">
+                            <img class="card-img-top" src="{{ asset('img/categories/motor.jpg') }}"/>
+                            <div class="texto-encima text-white fs-20">Motor</div>
+                        </div>                                 
+                    </div>         
+                </div> 
+                 <div class="col-md-2">
+                    <div class="card ">
+                        <div class="cont-img-card">
+                            <img class="card-img-top" src="{{ asset('img/categories/parenting.jpg') }}"/>
+                            <div class="texto-encima text-white fs-20">Parenting</div>
+                        </div>                                 
+                    </div>         
+                </div> 
+                 <div class="col-md-2">
+                    <div class="card ">
+                        <div class="cont-img-card">
+                            <img class="card-img-top" src="{{ asset('img/categories/religion.jpg') }}"/>
+                            <div class="texto-encima text-white fs-20 ">Religion</div>
+                        </div>                                 
+                    </div>         
+                </div> 
+                 <div class="col-md-2">
+                    <div class="card ">
+                        <div class="cont-img-card">
+                            <img class="card-img-top" src="{{ asset('img/categories/sports.jpg') }}"/>
+                            <div class="texto-encima text-white fs-20">Sports</div>
+                        </div>                                 
+                    </div>         
+                </div>
+                <div class="col-md-2">
+                    <div class="card ">
+                        <div class="cont-img-card">
+                            <img class="card-img-top" src="{{ asset('img/categories/art-culture.jpg') }}"/>
+                            <div class="texto-encima text-white fs-20 ">Art&Culture</div>
+                        </div>                                 
+                    </div>         
+                </div>
+                 <div class="col-md-2">
+                    <div class="card ">
+                        <div class="cont-img-card">
+                            <img class="card-img-top" src="{{ asset('img/categories/business.jpg') }}"/>
+                            <div class="texto-encima text-white fs-20">Bussiness</div>
+                        </div>                                 
+                    </div>         
+                </div> 
+                 <div class="col-md-2">
+                    <div class="card ">
+                        <div class="cont-img-card">
+                            <img class="card-img-top" src="{{ asset('img/categories/carft.jpg') }}"/>
+                            <div class="texto-encima text-white fs-20 ">Carft</div>
+                        </div>                                 
+                    </div>         
+                </div> 
+                 <div class="col-md-2">
+                    <div class="card ">
+                        <div class="cont-img-card">
+                            <img class="card-img-top" src="{{ asset('img/categories/celebrity.jpg') }}"/>
+                            <div class="texto-encima text-white fs-20">Celebrity</div>
+                        </div>                                 
+                    </div>         
+                </div> 
+                 <div class="col-md-2">
+                    <div class="card ">
+                        <div class="cont-img-card">
+                            <img class="card-img-top" src="{{ asset('img/categories/education.jpg') }}"/>
+                            <div class="texto-encima text-white fs-20">Education</div>
+                        </div>                                 
+                    </div>         
+                </div> 
+                 <div class="col-md-2">
+                    <div class="card ">
+                        <div class="cont-img-card">
+                            <img class="card-img-top" src="{{ asset('img/categories/fashion.jpg') }}"/>
+                            <div class="texto-encima text-white fs-20">Fashion</div>
+                        </div>                                 
+                    </div>         
+                </div>  
+                 <div class="col-md-2">
+                    <div class="card ">
+                        <div class="cont-img-card">
+                            <img class="card-img-top" src="{{ asset('img/categories/instagrammer.jpg') }}"/>
+                            <div class="texto-encima text-white fs-20 ">Instagrammer</div>
+                        </div>                                 
+                    </div>         
+                </div> 
+                 <div class="col-md-2">
+                    <div class="card ">
+                        <div class="cont-img-card">
+                            <img class="card-img-top" src="{{ asset('img/categories/manga.jpg') }}"/>
+                            <div class="texto-encima text-white fs-20">Manga</div>
+                        </div>                                 
+                    </div>         
+                </div> 
+                 <div class="col-md-2">
+                    <div class="card ">
+                        <div class="cont-img-card">
+                            <img class="card-img-top" src="{{ asset('img/categories/motor.jpg') }}"/>
+                            <div class="texto-encima text-white fs-20">Motor</div>
+                        </div>                                 
+                    </div>         
+                </div> 
+                 <div class="col-md-2">
+                    <div class="card ">
+                        <div class="cont-img-card">
+                            <img class="card-img-top" src="{{ asset('img/categories/parenting.jpg') }}"/>
+                            <div class="texto-encima text-white fs-20">Parenting</div>
+                        </div>                                 
+                    </div>         
+                </div> 
+                 <div class="col-md-2">
+                    <div class="card ">
+                        <div class="cont-img-card">
+                            <img class="card-img-top" src="{{ asset('img/categories/religion.jpg') }}"/>
+                            <div class="texto-encima text-white fs-20 ">Religion</div>
+                        </div>                                 
+                    </div>         
+                </div> 
+                 <div class="col-md-2">
+                    <div class="card ">
+                        <div class="cont-img-card">
+                            <img class="card-img-top" src="{{ asset('img/categories/sports.jpg') }}"/>
+                            <div class="texto-encima text-white fs-20">Sports</div>
+                        </div>                                 
+                    </div>         
+                </div>         
+            </div>         
+        </div>
+    </div> 
+    <!-- Trending Tags. -->
+    <div class="tags">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 p-t-30 p-b-30"><p class="titulo float-left">Trending Tags</p></div>
+                <div class="row m-l-15 m-b-60">
+                    <div class="tag text-center  mb-2 border border-dark">#games</div>
+                    <div class="tag text-center  mb-2 border border-dark">#fashion</div>
+                    <div class="tag text-center  mb-2 border border-dark">#JustCause4</div>
+                    <div class="tag text-center  mb-2 border border-dark">#stream</div>
+                    <div class="tag text-center  mb-2 border border-dark">#fashion</div>
+                    <div class="tag text-center  mb-2 border border-dark">#lalalala</div> 
+                    <div class="tag text-center  mb-2 border border-dark">#games</div>
+                    <div class="tag text-center  mb-2 border border-dark">#fashion</div>
+                    <div class="tag text-center  mb-2 border border-dark">#JustCause4</div>
+                    <div class="tag text-center  mb-2 border border-dark">#stream</div>
+                    <div class="tag text-center  mb-2 border border-dark">#fashion</div>
+                    <div class="tag text-center  mb-2 border border-dark">#lalalala</div>
+                    <div class="tag text-center  mb-2 border border-dark">#stream</div>
+                    <div class="tag text-center  mb-2 border border-dark">#fashion</div>
+                    <div class="tag text-center  mb-2 border border-dark">#lalalala</div>  
+                    <div class="tag text-center  mb-2 border border-dark">#cinematream</div> 
+                </div>    
+            </div>          
+        </div>
+    </div>
+{% endblock %}
