@@ -1,0 +1,18 @@
+<ul class="nav navbar-dark bg-dark justify-content-center" id="myTab" role="tablist">
+  <li class="col-md-2"></li>
+  <li class="col-md-4 nav-item">
+    <a class="nav-link text-center fs-20 active" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="true">Messages</a>
+  </li>
+  <li class="col-md-4 nav-item">
+    <a class="nav-link fs-20" id="meetings-tab" data-toggle="tab" href="#meetings" role="tab" aria-controls="meetings" aria-selected="false">Private Meetings</a>
+  </li>
+  <li class="col-md-2"></li>
+</ul>
+<div class="tab-content " id="myTabContent">
+  <div class="tab-pane fade show active" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+    {% include 'viewerMode/messages_parts/messages.html.twig' %}
+  </div>
+  <div class="tab-pane fade" id="meetings" role="tabpanel" aria-labelledby="meetings-tab">
+    {% include 'viewerMode/messages_parts/private_meetings.html.twig' %}
+  </div>
+</div>

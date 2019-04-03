@@ -1,8 +1,18 @@
 
 import 'bootstrap';
-
 import '../css/app.scss';
 import '../js/jsCalendar.min.js';
+
+
+$(function(){
+  $('[rel=popover]').popover({ 
+    html : true ,
+    container: 'body',
+    content: function() {
+      return $('#popover_content').html();
+    }
+  });
+});
 
 
 // Get the element
@@ -17,3 +27,5 @@ jsCalendar.onDateClick(function(event, date){
   jsCalendar.onMonthChange(function(event, date){
     // On month change
   });
+
+  

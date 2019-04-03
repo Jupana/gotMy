@@ -23,17 +23,78 @@
                 <a class="nav-link" id="op2t" href="{{path('viewerModeEvents')}}">Live Events</a>
             </li>
             <li class="nav-item ">
-                <a class="size_iconNav" id="op3" href="#">{{source('@public_path'~asset('/img/iconos/ic-mensajes.svg')) }}</a>
-                <a class="nav-link" id="op3t" href="#">Mensajes</a>
+                <a class="size_iconNav" id="op3" href="{{path('viewerModeMessages')}}">{{source('@public_path'~asset('/img/iconos/ic-mensajes.svg')) }}</a>
+                <a class="nav-link" id="op3t" href="{{path('viewerModeMessages')}}">Menssages</a>
             </li>
             <li class="nav-item ">
                 <a class="size_iconNav" id="op4" href="#">{{source('@public_path'~asset('/img/iconos/ic-activity.svg')) }}</a>
-                <a class="nav-link"id="op4t" href="#">Activity</a>
+                <a tabindex="0" class="nav-link" id="op4t" href="#" rel="popover" data-placement="bottom" data-toggle="popover" data-trigger="focus">Activity</a>
             </li>
         </ul> 
     </div> 
     <div>    
         <a class="join fs-20 px-5 pt-2 pb-3 text-white float-right" >Join gotmy for FREE</a>
-    </div>     
-        
+    </div> 
 </nav>
+
+<!-- Content for Popover  -->
+<div class="popover d-none" id="popover_content">
+    <div class="data-content" >  
+        <div class="container">  
+            <div class="row m-t-15">
+                <div class="activity_item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img class="rounded-circle" src="{{ asset('img/Captura7.png') }}" alt="">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="fs-15 text-dark"><span>Bess Thornton</span></div>
+                            <div class="color_gris ">Yesterday</div>
+                        </div> 
+                    </div> 
+                    <hr/>   
+                </div>
+                 <div class="activity_item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img class="rounded-circle" src="{{ asset('img/Captura6.png') }}" alt="">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="fs-15 text-dark"><span>Bess Thornton</span></div>
+                            <div class="color_gris ">Yesterday</div>
+                        </div> 
+                    </div> 
+                    <hr/>     
+                </div>
+                 <div class="activity_item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img class="rounded-circle" src="{{ asset('img/Captura7.png') }}" alt="">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="fs-15 text-dark"><span>Bess Thornton</span></div>
+                            <div class="color_gris ">Yesterday</div>
+                        </div> 
+                    </div> 
+                     <hr/>     
+                </div>
+                 <div class="activity_item">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img class="rounded-circle" src="{{ asset('img/Captura6.png') }}" alt="">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="fs-15 text-dark"><span>Bess Thornton</span></div>
+                            <div class="color_gris ">Yesterday</div>
+                        </div> 
+                    </div> 
+                    <hr/>     
+                </div>
+                <div class="col-md-12">
+                    <div class="color_salmon text-center fs-15 p-b-15"><a href="#">Show all notificacions</a></div>
+                </div>
+            </div>                                    
+        </div>         
+    </div>
+</div>   
+

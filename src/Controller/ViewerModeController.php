@@ -21,4 +21,10 @@ class ViewerModeController extends AbstractController
             'controller_name' => 'VieweModeController',
         ]);
     }
+    public function messages()
+    {
+        return $this->render('viewerMode/messages.html.twig', [
+            'controller_name' => 'VieweModeController',
+        ]);
+    }
 }

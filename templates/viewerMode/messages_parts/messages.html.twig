@@ -1,0 +1,189 @@
+<div class="container">
+    <div class="row mt-n3">
+        <div class="col-md-2"></div>
+        <div class="col-md-4"><img src="{{ asset('img/Captura8.png') }}" /></div>      
+        <div class="col-md-4"></div>
+        <div class="col-md-2"></div>
+    </div>    
+</div>
+ <!-- Menssages-->
+<div class="mensajes p-t-20  p-b-100">
+    <div class="container">
+        <div class="row m-t-25">             
+            <div class="col-md-6 border-right">
+                <div class="row">
+                    <div class="col-md-6"><p class="titulo  float-left">Messages</p></div>
+                    <div class="col-md-6"><a class="join fs-17 px-5 pt-2 pb-3 text-white float-right" >Create message</a></div>
+                    <div class="col-md-12">
+                        <form action="#" id="search" class="search d-flex flex-md-row flex-column align-items-center justify-content-between">
+                            <div class=" border d-flex flex-row align-items-center justify-content-start">
+                                {{source('@public_path'~asset('/img/iconos/ic-search.svg')) }}
+                                <input type="search" class="search_input" placeholder="Search message.." required="required">
+                                <button type="submit" hidden></button>
+                            </div>								   
+                        </form>                  
+                    </div>
+                    <div class="col-md-12">
+                        <div class="row m-t-20">
+                            <div class="col-md-2 p-t-10"><img class="rounded-circle" src="{{ asset('img/categories/manga.jpg') }}" alt=""></div>
+                            <div class="col-md-10 body">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="pt-2 fs-20 text-dark font-weight-bold"><span>Just Cause 4 FINALLY</span></div>
+                                        <div class="color_salmon"><a href="#">Charlotte Roberson</a></div>
+                                        <div class="color_gris pb-2 font-weight-bold"><p>Businesses at present has ...</p></div>
+                                    </div>
+                                    <div class="col-md-4 color_gris">
+                                        <div class="font-weight-bold">2 hours ago</div>
+                                        <div class="p-t-20"><img src="{{ asset('img/Captura9.png') }}" /></div>
+                                    </div>
+                                </div> 
+                                <hr/>                        
+                            </div>        
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="row m-t-20">
+                            <div class="col-md-2 p-t-10"><img class="rounded-circle" src="{{ asset('img/Captura6.png') }}" alt=""></div>
+                            <div class="col-md-10 body">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="pt-2 fs-20 text-dark font-weight-bold"><span>Micheal McCoy</span></div>
+                                        <div class="color_salmon"><a href="#">Influencer</a></div>
+                                        <div class="color_gris pb-2 font-weight-bold"><p>Why Do You Need To Join An Affate ...</p></div>
+                                    </div>
+                                    <div class="col-md-4 color_gris">
+                                        <div class="font-weight-bold">Yesterday</div>
+                                        <div class="p-t-20"><img src="{{ asset('img/Captura9.png') }}" /></div>
+                                    </div>
+                                </div> 
+                                <hr/>                        
+                            </div>        
+                        </div>
+                    </div>
+                       <div class="col-md-12">
+                        <div class="row m-t-20">
+                            <div class="col-md-2 p-t-10"><img class="rounded-circle" src="{{ asset('img/categories/fashion.jpg') }}" alt=""></div>
+                            <div class="col-md-10 body">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="pt-2 fs-20 text-dark font-weight-bold"><span>Just Cause 4 FINALLY</span></div>
+                                        <div class="color_salmon"><a href="#">Charlotte Roberson</a></div>
+                                        <div class="color_gris pb-2 font-weight-bold"><p>Businesses at present has ...</p></div>
+                                    </div>
+                                    <div class="col-md-4 color_gris">
+                                        <div class="font-weight-bold">2 hours ago</div>
+                                        <div class="p-t-20"><img src="{{ asset('img/Captura9.png') }}" /></div>
+                                    </div>
+                                </div> 
+                                <hr/>                        
+                            </div>        
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="row m-t-20">
+                            <div class="col-md-2 p-t-10"><img class="rounded-circle" src="{{ asset('img/Captura7.png') }}" alt=""></div>
+                            <div class="col-md-10 body">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="pt-2 fs-20 text-dark font-weight-bold"><span>Micheal McCoy</span></div>
+                                        <div class="color_salmon"><a href="#">Influencer</a></div>
+                                        <div class="color_gris pb-2 font-weight-bold"><p>Why Do You Need To Join An Affate ...</p></div>
+                                    </div>
+                                    <div class="col-md-4 color_gris">
+                                        <div class="font-weight-bold">Yesterday</div>
+                                        <div class="p-t-20"><img src="{{ asset('img/Captura9.png') }}" /></div>
+                                    </div>
+                                </div> 
+                                <hr/>                        
+                            </div>        
+                        </div>
+                    </div>      
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row m-l-20">
+                    <div class="col-md-12"><p class="titulo float-left">Last influencers</p></div>
+                    <div class="col-md-4">
+                        <div class="shadow m-t-20">
+                            <div class="text-center p-t-20"><img src="{{ asset('img/Captura6.png') }}" /></div>
+                            <div class="text-center">Bess Thornton</div>
+                            <div class="text-center p-b-20">
+                                <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span> 
+                                <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>                                 
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="col-md-4">
+                        <div class="shadow m-t-20">                    
+                            <div class="text-center p-t-20"><img src="{{ asset('img/Captura7.png') }}" /></div>
+                            <div class="text-center">Amy Peters</div>
+                            <div class="text-center p-b-20">
+                                <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span> 
+                                <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>                                 
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-4">
+                        <div class="shadow m-t-20">
+                            <div class="text-center p-t-20"><img src="{{ asset('img/Captura6.png') }}" /></div>
+                            <div class="text-center">Bess Thornton</div>
+                            <div class="text-center p-b-20">
+                                <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span> 
+                                <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>                                 
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="col-md-4">
+                        <div class="shadow m-t-20">                    
+                            <div class="text-center p-t-20"><img src="{{ asset('img/Captura7.png') }}" /></div>
+                            <div class="text-center">Amy Peters</div>
+                            <div class="text-center p-b-20">
+                                <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span> 
+                                <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>                                 
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-md-4">
+                        <div class="shadow m-t-20">
+                            <div class="text-center p-t-20"><img src="{{ asset('img/Captura6.png') }}" /></div>
+                            <div class="text-center">Bess Thornton</div>
+                            <div class="text-center p-b-20">
+                                <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span> 
+                                <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>                                 
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="col-md-4">
+                        <div class="shadow m-t-20">                    
+                            <div class="text-center p-t-20"><img src="{{ asset('img/Captura7.png') }}" /></div>
+                            <div class="text-center">Amy Peters</div>
+                            <div class="text-center p-b-20">
+                                <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span> 
+                                <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>                                 
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+</div> 
