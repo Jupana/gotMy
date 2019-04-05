@@ -1,0 +1,117 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Live Event{% endblock %}
+
+{% block body %}
+ <script type="text/javascript">
+     window.onload = function() {
+        document.getElementById("op2").style.color="salmon";
+        document.getElementById("op2t").style.color="white";
+        }
+    </script>  
+<div class="progress bg-secondary text-white fs-15 d-flex justify-content-between">
+    <div class=" progress-bar bgsalmon" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+       <div class="d-flex p-3">Started at 4:00pm</div>
+    </div>              
+    <div class="d-flex p-2 ">Ends at 5:30pm</div>
+</div>   
+<div class="liveEvent p-t-20 p-b-20">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="CuadroLive">         
+                    <img src="{{ asset('img/captura10.png') }}" class="liveImg " >
+                    <div class="sonido">{{source('@public_path'~asset('/img/iconos/ic-audio.svg')) }}</div>
+                    <div class="config">{{source('@public_path'~asset('/img/iconos/ic-settings.svg')) }}</div>
+                    <div class="fullscreen"> {{source('@public_path'~asset('/img/iconos/ic-fullscreen.svg')) }}</div>                
+                    <div class="user1"><img src="{{ asset('img/Captura11.png') }}" /></div>
+                    <div class="user2"><img src="{{ asset('img/Captura12.png') }}" /></div>
+                    <div class="user3"><img src="{{ asset('img/Captura13.png') }}" /></div>
+                </div> 
+                <div class="row">   
+                    <div class="col-md-10"></div>   
+                    <div class="col-md-2">
+                        <div class="pt-2 color_salmon">
+                            {{source('@public_path'~asset('/img/iconos/ic-streaming-mic-off.svg')) }}                  
+                            {{source('@public_path'~asset('/img/iconos/ic-streaming-videocamera-off.svg')) }}
+                        </div>
+                    </div> 
+                </div>  
+                <div class="row">     
+                    <div class="col-md-12"><p class=" fs-20 float-left">Publish your comment</p></div>
+                </div>
+                <div class="row">        
+                    <div class="col-md-8">
+                        <form action="#" id="search" class="search d-flex flex-md-row flex-column align-items-center justify-content-between">
+                            <div class=" border d-flex flex-row align-items-center justify-content-start">
+                                <input type="search" class="search_input" placeholder="" required="required">
+                                <button type="submit" hidden></button>
+                            </div>								   
+                        </form>                  
+                    </div>
+                    <div class="col-md-4"><a class=" join fs-17 p-l-80  p-r-80 p-t-15 p-b-15 text-white" >Publish</a></div>
+                </div>
+            </div>    
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-4">               
+                        <div class="float-left"><img src="{{ asset('img/Captura5.png') }}" /></div>
+                    </div>
+                    <div class="col-md-8">       
+                        <div class="float-left fs-25 w-100">Marbelle Franklin</div>
+                        <div class="float-left">
+                            <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                            <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                            <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                            <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span> 
+                            <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>                                 
+                        </div>
+                    </div> 
+                    <div class="col-md-12">
+                        <p class="titulo float-left">Thrill Friends And Family With A Make It Yourself</p>
+                    </div>
+                    <div class="col-md-12">
+                        <p class="color_salmon float-left">Cooking</p>
+                    </div>
+                </div>    
+                <div class="comment_item">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img class="rounded-circle" src="{{ asset('img/Captura7.png') }}" alt="">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="color_salmon"><span>Bess Thornton</span></div>
+                            <div class="text-dark">You still have to do kakuna</div>
+                        </div> 
+                    </div> 
+                    <hr/>   
+                </div> 
+                <div class="comment_item">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img class="rounded-circle" src="{{ asset('img/Captura6.png') }}" alt="">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="color_salmon"><span>Bess Thornton</span></div>
+                            <div class="text-dark">You still have to do kakuna</div>
+                        </div> 
+                    </div> 
+                    <hr/>   
+                </div> 
+                <div class="comment_item">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img class="rounded-circle" src="{{ asset('img/Captura5.png') }}" alt="">
+                        </div>
+                        <div class="col-md-9">
+                            <div class="color_salmon"><span>Bess Thornton</span></div>
+                            <div class="text-dark">You still have to do kakuna</div>
+                        </div> 
+                    </div> 
+                    <hr/>   
+                </div>            
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

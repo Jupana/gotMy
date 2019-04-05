@@ -99,7 +99,7 @@
             <div class="row">
                 <div class="col-md-12"><p class="titulo float-left">Live Online Events</p></div>
                 <div class="col-md-4">
-                    <div class="card ">
+                    <a href="{{ path('viewerModeEvents_eventId') }}"><div class="card ">
                         <div class="cont-img-card">
                             <img class="card-img-top" src="{{ asset('img/categories/cooking.jpg') }}"/>
                             <div class="icono-encima"><a href="#" class="size_icon">{{source('@public_path'~asset('/img/iconos/button-live.svg')) }}</a></div>
@@ -122,7 +122,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>         
+                    </div></a>         
                 </div>
                 <div class="col-md-4">
                     <div class="card ">

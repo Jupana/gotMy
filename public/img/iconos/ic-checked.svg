@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>ic-checked</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M17.1311828,7.21290323 L15.9182796,6 L10.4645161,11.4537634 L11.6774194,12.6666667 L17.1311828,7.21290323 Z M20.7784946,6 L11.6774194,15.1010753 L8.08172043,11.5139785 L6.8688172,12.7268817 L11.6774194,17.5354839 L22,7.21290323 L20.7784946,6 Z M2,12.7268817 L6.80860215,17.5354839 L8.02150538,16.3225806 L3.22150538,11.5139785 L2,12.7268817 Z" id="path-1"></path>
+    </defs>
+    <g id="ic-checked" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="↳Color" fill="#0091EA" xlink:href="#path-1"></use>
+    </g>
+</svg>

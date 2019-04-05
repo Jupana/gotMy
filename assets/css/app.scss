@@ -52,6 +52,9 @@ ul
 .color_salmon{
     color:$salmon;
 }
+.bgsalmon{
+    background-color:$salmon;
+}
 
 .color_gris{
     color:$grey;
@@ -514,6 +517,63 @@ ul
   
 }
 
+/*---Event--*/
+.progress{
+    height:30px;
+}
+
+.CuadroLive{
+    position: relative;
+    display: inline-block; 
+}
+
+.liveImg {
+    width:900px;
+    border-radius:3%;
+    max-height:450px;
+}
+ 
+.config,.fullscreen,.sonido,.user1,.user2,.user3{
+    position:absolute;
+
+}
+
+.user1 img,.user2 img,.user3 img{
+    border-radius:25%;
+  
+}
+.config,.sonido,.fullscreen svg{
+    color:$white;
+}
+.config{
+    right:10%;
+    bottom:5%; 
+}
+.sonido{
+    right:-15%;
+    bottom:2%;
+}
+.fullscreen{
+    right:3%;
+    bottom:5%; 
+}
+.sonido svg{
+    width:15%;
+}
+.user1{
+    right:3%;
+    bottom:35%;
+    
+}
+.user2{
+    right:3%;
+    bottom:55%;
+}
+.user3{
+    right:3%;
+    bottom:75%;
+}
+
 
   
   
@@ -554,6 +614,10 @@ ul
     .jsCalendar table {
         margin: 20px;
     
+    }
+    .sonido{
+        right:-10%;
+   
     }
    
    

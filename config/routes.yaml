@@ -11,3 +11,6 @@ viewerModeEvents:
 viewerModeMessages:
     path: /viewerModeMessages
     controller: App\Controller\ViewerModeController::messages            
+viewerModeEvents_eventId:
+    path: /viewerModeEvents/eventId
+    controller: App\Controller\ViewerModeController::eventId

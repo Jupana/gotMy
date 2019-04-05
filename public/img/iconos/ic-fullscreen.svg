@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>ic-fullscreen</title>
+    <desc>Created with Sketch.</desc>
+    <g id="ic-fullscreen" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M4.14285714,15.1428571 L1,15.1428571 L1,23 L8.85714286,23 L8.85714286,19.8571429 L4.14285714,19.8571429 L4.14285714,15.1428571 Z M1,8.85714286 L4.14285714,8.85714286 L4.14285714,4.14285714 L8.85714286,4.14285714 L8.85714286,1 L1,1 L1,8.85714286 Z M19.8571429,19.8571429 L15.1428571,19.8571429 L15.1428571,23 L23,23 L23,15.1428571 L19.8571429,15.1428571 L19.8571429,19.8571429 Z M15.1428571,1 L15.1428571,4.14285714 L19.8571429,4.14285714 L19.8571429,8.85714286 L23,8.85714286 L23,1 L15.1428571,1 Z" id="ic-full-screen" fill="#000000" fill-rule="nonzero"></path>
+    </g>
+</svg>
