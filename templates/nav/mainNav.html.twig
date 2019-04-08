@@ -15,25 +15,35 @@
                 <a class="nav-link " id="op0t" href="{{ path('index') }}">Discover <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item" >
-                <a class="size_iconNav" id="op1" href="{{ path('viewerModeSearch') }}">{{source('@public_path'~asset('/img/iconos/ic-search.svg')) }}</a>
-                <a class="nav-link" id="op1t"href="{{ path('viewerModeSearch') }}">Search</a>
+                <a class="size_iconNav" id="op1" {% if is_granted('ROLE_USER') %}href="{{ path('viewerModeSearch') }}"{% endif %}>{{source('@public_path'~asset('/img/iconos/ic-search.svg')) }}</a>
+                <a class="nav-link" id="op1t" {% if is_granted('ROLE_USER') %}href="{{ path('viewerModeSearch') }}"{% endif %}>Search</a>
             </li>
             <li class="nav-item" >
-                <a class="size_iconNav" id="op2" href="{{path('viewerModeEvents')}}">{{source('@public_path'~asset('/img/iconos/ic-event.svg')) }}</a>
-                <a class="nav-link" id="op2t" href="{{path('viewerModeEvents')}}">Live Events</a>
+                <a class="size_iconNav" id="op2"  {% if is_granted('ROLE_USER') %}href="{{path('viewerModeEvents')}}"{% endif %}>{{source('@public_path'~asset('/img/iconos/ic-event.svg')) }}</a>
+                <a class="nav-link" id="op2t"  {% if is_granted('ROLE_USER') %}href="{{path('viewerModeEvents')}}"{% endif %}>Live Events</a>
             </li>
             <li class="nav-item ">
-                <a class="size_iconNav" id="op3" href="{{path('viewerModeMessages')}}">{{source('@public_path'~asset('/img/iconos/ic-mensajes.svg')) }}</a>
-                <a class="nav-link" id="op3t" href="{{path('viewerModeMessages')}}">Menssages</a>
+                <a class="size_iconNav" id="op3"  {% if is_granted('ROLE_USER') %}href="{{path('viewerModeMessages')}}"{% endif %}>{{source('@public_path'~asset('/img/iconos/ic-mensajes.svg')) }}</a>
+                <a class="nav-link" id="op3t"  {% if is_granted('ROLE_USER') %} href="{{path('viewerModeMessages')}}"{% endif %}>Menssages</a>
             </li>
             <li class="nav-item ">
                 <a class="size_iconNav" id="op4" href="#">{{source('@public_path'~asset('/img/iconos/ic-activity.svg')) }}</a>
-                <a tabindex="0" class="nav-link" id="op4t" href="#" rel="popover" data-placement="bottom" data-toggle="popover" data-trigger="focus">Activity</a>
+                <a class="nav-link" id="op4t" href="#" {% if is_granted('ROLE_USER') %}tabindex="0" rel="popover" data-placement="bottom" data-toggle="popover" data-trigger="focus"{% endif %}>Activity</a>
             </li>
         </ul> 
     </div> 
-    <div>    
-        <a class="join fs-20 px-5 pt-2 pb-3 text-white float-right" >Join gotmy for FREE</a>
+    <div>  
+        <form class="form-inline my-2 my-lg-0">
+             {% if is_granted('ROLE_USER') %}
+                <div class="float-right">
+                    <a class="nav-link text-white" href="{{ path('index') }}">{{ app.user.name}}</a>       
+                    <a class="nav-link text-secondary" href="{{ path('security_logout') }}">Deconectate</a>  
+                </div> 
+                <img class="rounded-circle mr-n5" style="width:25%;" src="{{ asset('img/imgUser.jpg') }}"/>                           
+            {% else %}
+                <a class="join fs-20 px-5 pt-2 pb-3 text-white float-right" href="{{ path('security_login') }}">Join gotmy for FREE</a>
+            {% endif %}
+        </form>  
     </div> 
 </nav>
 

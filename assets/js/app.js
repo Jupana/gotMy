@@ -1,7 +1,7 @@
 
 import 'bootstrap';
 import '../css/app.scss';
-import '../js/jsCalendar.min.js';
+import './jsCalendar.js';
 
 
 $(function(){
