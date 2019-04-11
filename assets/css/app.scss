@@ -6,6 +6,7 @@ $salmon:#F75A60;
 $grey:#C0C0C0;
 $grey2:#696969;
 $colortext: #222121d7;
+$dark:#393340  ;
 
 /*General Stuff*/
 html,
@@ -56,12 +57,17 @@ ul
     background-color:$salmon;
 }
 
+.bg-dark{
+    background-color:$dark !important;
+}
+
 .color_gris{
     color:$grey;
 } 
 .titulo{
     font-size:40px;
 }
+
 
 /*Main Navbar*/
     .imglogo{ 

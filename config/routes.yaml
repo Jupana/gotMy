@@ -4,13 +4,24 @@ index:
     
 viewerModeSearch:
     path: /viewerModeSearch
-    controller: App\Controller\ViewerModeController::search  
-viewerModeEvents:
-    path: /viewerModeEvents
-    controller: App\Controller\ViewerModeController::events    
+    controller: App\Controller\ViewerModeController::search 
+viewerModeFind:
+    path: /viewerModeFindByCategory
+    controller: App\Controller\ViewerModeController::findByCategory     
+
 viewerModeMessages:
     path: /viewerModeMessages
-    controller: App\Controller\ViewerModeController::messages            
+    controller: App\Controller\ViewerModeController::messages
+
+viewerModeEvents:
+    path: /viewerModeEvents
+    controller: App\Controller\ViewerModeController::events               
 viewerModeEvents_eventId:
-    path: /viewerModeEvents/eventId
-    controller: App\Controller\ViewerModeController::eventId
+    path: /viewerModeEvents/eventLiveId
+    controller: App\Controller\ViewerModeController::eventLiveId
+viewerModeEvents_eventUpId:
+    path: /viewerModeEvents/eventUpcomingId
+    controller: App\Controller\ViewerModeController::eventUpcomingId   
+viewerModeEvents_eventVideoId:
+    path: /viewerModeEvents/eventVideoId
+    controller: App\Controller\ViewerModeController::eventVideoId        

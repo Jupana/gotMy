@@ -15,6 +15,13 @@ class ViewerModeController extends AbstractController
         ]);
     }
 
+    public function findByCategory()
+    {
+        return $this->render('viewerMode/search/findByCategory.html.twig', [
+            'controller_name' => 'VieweModeController',
+        ]);
+    }
+
     public function events()
     {
         return $this->render('viewerMode/events/events.html.twig', [
@@ -22,12 +29,27 @@ class ViewerModeController extends AbstractController
         ]);
     }
 
-    public function eventId()
+    public function eventLiveId()
     {
-        return $this->render('viewerMode/events/eventId.html.twig', [
+        return $this->render('viewerMode/events/eventLiveId.html.twig', [
             'controller_name' => 'VieweModeController',
         ]);
     }
+
+    public function eventUpcomingId()
+    {
+        return $this->render('viewerMode/events/eventUpcomingId.html.twig', [
+            'controller_name' => 'VieweModeController',
+        ]);
+    }
+
+    public function eventVideoId()
+    {
+        return $this->render('viewerMode/events/eventVideoId.html.twig', [
+            'controller_name' => 'VieweModeController',
+        ]);
+    }
+
 
     public function messages()
     {

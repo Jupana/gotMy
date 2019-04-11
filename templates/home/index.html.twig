@@ -194,9 +194,10 @@
             <div class="row">
                 <div class="col-md-12"><p class="titulo float-left">Upcoming Live  Events</p></div>
                 <div class="col-md-4">
-                    <div class="card ">
+                    <a {% if is_granted('ROLE_USER')%}href="{{ path('viewerModeEvents_eventUpId') }}" {% endif %}>
+                        <div class="card ">
                         <div class="cont-img-card ">
-                            <img class="card-img-top" src="{{ asset('img/categories/gamming.jpg') }}"/>                 
+                            <img class="card-img-top" src="{{ asset('img/categories/cooking.jpg') }}"/>                 
                             <div class="icono-encima">
                                 <div>
                                     <div class="bookmark">{{source('@public_path'~asset('/img/iconos/ic-bookmark.svg')) }}</div>
@@ -241,7 +242,7 @@
                             </div>
                         </div>
                     </div>         
-                </div>
+                </div></a>
                 <div class="col-md-4">
                     <div class="card ">
                         <div class="cont-img-card ">
@@ -350,12 +351,13 @@
             <div class="row">
                 <div class="col-md-12"><p class="titulo float-left">Discover by Category</p></div>
                 <div class="col-md-2">
+                    <a {% if is_granted('ROLE_USER')%}href="{{ path('viewerModeFind') }}" {% endif %}>
                     <div class="card">
                         <div class="cont-img-card">
-                            <img class="card-img-top" src="{{ asset('img/categories/art-culture.jpg') }}"/>
-                            <div class="texto-encima text-white fs-20 ">Art&Culture</div>
+                            <img class="card-img-top" src="{{ asset('img/categories/cooking.jpg') }}"/>
+                            <div class="texto-encima text-white fs-20 ">Cooking&Food</div>
                         </div>                                 
-                    </div>         
+                    </div></a>         
                 </div>
                  <div class="col-md-2">
                     <div class="card ">
@@ -460,20 +462,22 @@
                  <!-- Video Item -->
              	<div class="col-md-4 video_col">
 					<div class="video_item">
+                        <a {% if is_granted('ROLE_USER')%}href="{{ path('viewerModeEvents_eventVideoId') }}" {% endif %}>
 						<div class="col-md-6 video_body">
 							<div class=" pt-2 color_gris"><p>Monday,18/12/2018</p></div>
-							<div class="font-weight-bold"><a href="#">A Right Media Mix Can Make The Difference</a></div>
+							<div class="font-weight-bold"><p>A Right Media Mix Can Make The Difference</p></div>
 							<div class="color_salmon pb-2"><p>Nature,Outdoors & Oets</p></div>
 						</div>
-						<div class="col-md-6 video_image"><img src="{{ asset('img/categories/manga.jpg') }}" alt=""></div>	
-					</div>
+						<div class="col-md-6 video_image"><img src="{{ asset('img/categories/cooking.jpg') }}" alt=""></div>	
+					    </a>
+                    </div>
 				</div> 
                   <!-- Video Item -->
              	<div class="col-md-4 video_col">
 					<div class="video_item">
 						<div class="col-md-6 video_body">
 							<div class=" pt-2 color_gris"><p>Monday,18/12/2018</p></div>
-							<div class="font-weight-bold"><a href="#">A Right Media Mix Can Make The Difference</a></div>
+							<div class="font-weight-bold"><p>A Right Media Mix Can Make The Difference</p></div>
 							<div class="color_salmon pb-2"><p>Nature,Outdoors & Oets</p></div>
 						</div>
 						<div class="col-md-6 video_image"><img src="{{ asset('img/categories/celebrity.jpg') }}" alt=""></div>	
@@ -484,7 +488,7 @@
 					<div class="video_item">
 						<div class="col-md-6 video_body">
 							<div class=" pt-2 color_gris"><p>Monday,18/12/2018</p></div>
-							<div class="font-weight-bold"><a href="#">A Right Media Mix Can Make The Difference</a></div>
+							<div class="font-weight-bold"><p>A Right Media Mix Can Make The Difference</p></div>
 							<div class="color_salmon pb-2"><p>Nature,Outdoors & Oets</p></div>
 						</div>
 						<div class="col-md-6 video_image"><img src="{{ asset('img/categories/business.jpg') }}" alt=""></div>	
@@ -495,7 +499,7 @@
 					<div class="video_item">
 						<div class="col-md-6 video_body">
 							<div class=" pt-2 color_gris"><p>Monday,18/12/2018</p></div>
-							<div class="font-weight-bold"><a href="#">A Right Media Mix Can Make The Difference</a></div>
+							<div class="font-weight-bold"><p>A Right Media Mix Can Make The Difference</p></div>
 							<div class="color_salmon pb-2"><p>Nature,Outdoors & Oets</p></div>
 						</div>
 						<div class="col-md-6 video_image"><img src="{{ asset('img/categories/hobbies.jpg') }}" alt=""></div>	
@@ -506,7 +510,7 @@
 					<div class="video_item">
 						<div class="col-md-6 video_body">
 							<div class=" pt-2 color_gris"><p>Monday,18/12/2018</p></div>
-							<div class="font-weight-bold"><a href="#">A Right Media Mix Can Make The Difference</a></div>
+							<div class="font-weight-bold"><p>A Right Media Mix Can Make The Difference</p></div>
 							<div class="color_salmon pb-2"><p>Nature,Outdoors & Oets</p></div>
 						</div>
 						<div class="col-md-6 video_image"><img src="{{ asset('img/categories/nature.jpg') }}" alt=""></div>	
@@ -517,7 +521,7 @@
 					<div class="video_item">
 						<div class="col-md-6 video_body">
 							<div class=" pt-2 color_gris"><p>Monday,18/12/2018</p></div>
-							<div class="font-weight-bold"><a href="#">A Right Media Mix Can Make The Difference</a></div>
+							<div class="font-weight-bold"><p>A Right Media Mix Can Make The Difference</p></div>
 							<div class="color_salmon pb-2"><p>Nature,Outdoors & Oets</p></div>
 						</div>
 						<div class="col-md-6 video_image"><img src="{{ asset('img/categories/travel.jpg') }}" alt=""></div>	

@@ -1,0 +1,194 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Live Event{% endblock %}
+
+{% block body %}
+ <script type="text/javascript">
+     window.onload = function() {
+        document.getElementById("op2").style.color="salmon";
+        document.getElementById("op2t").style.color="white";
+        }
+    </script>  
+<div class="detalle_influencer bg-dark text-white p-b-20">
+    <div class="container">
+        <div class="row">          
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-1">
+                        <div class="">
+                            <div class="font-weight-bold fs-35">18</div>
+                            <div class="font-weight-bold  color_salmon fs-20">APR</div>
+                        </div>
+                    </div>
+                    <div class="col-md-1"> 
+                        <img class="rounded-circle" src="{{ asset('img/Captura14.png') }}" />
+                    </div>
+                    <div class="col-md-10">  
+                        <p class="text-white fs-30">Marbelle Franklin</p>
+                        <p>
+                            <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                            <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                            <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                            <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                        </p>
+                    </div>      
+                </div>
+            </div>
+            <div class="offset-md-1 col-md-7">
+                <div class="title fs-45">
+                    Thrill Friends And Family With A Make It Yourself
+                </div>
+                <span class="category color_salmon fs-20">
+                    Cooking
+                </span>
+            </div>
+            <div class="col-md-4">
+                <div class="location">             
+                    <p><span class="fs-20">{{source('@public_path'~asset('/img/iconos/ic-map.svg')) }}Live from New York</span></p>                        
+                </div>
+                <div class="time">
+                    <p><span class="fs-20">{{source('@public_path'~asset('/img/iconos/ic-time.svg')) }}16:00-17:30 (GMT-5 New York)</span></p>
+                </div>
+                <div class="buy">
+                    <a class="join fs-20 px-5 pt-2 pb-3 text-white" >Buy ticket for $20.00</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="upcoming_event">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <img class="p-t-20 p-b-20" src="{{ asset('img/captura15.png') }}" />
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="description">
+                            <h1>Live Event Description</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus massa tortor, dignissim ac ante quis, maximus sagittis elit. Nam elementum, erat ut tempor auctor, tortor est scelerisque risus, vitae sodales elit metus at libero.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                ...<span class="color_salmon"><a href="#" >Read more</a></span> 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="location">
+                            <h3>Location</h3>
+                            <p><span class="map">{{source('@public_path'~asset('/img/iconos/ic-map.svg')) }} East Pasquaslefurt</span></p>                        
+                        </div>
+                        <div class="language">
+                            <h3>Language</h3>
+                            <p><span class="map">{{source('@public_path'~asset('/img/iconos/cl.svg')) }} English</span></p>                        
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 p-t-30 p-b-30"><h1 class="float-left">Related Tags</h1></div>
+                    <div class="col-md-12">
+                        <div class="row m-b-60">
+                            <div class="tag text-center  mb-2 border border-dark">#games</div>
+                            <div class="tag text-center  mb-2 border border-dark">#fashion</div>
+                            <div class="tag text-center  mb-2 border border-dark">#JustCause4</div>
+                            <div class="tag text-center  mb-2 border border-dark">#stream</div>
+                            <div class="tag text-center  mb-2 border border-dark">#fashion</div>
+                            <div class="tag text-center  mb-2 border border-dark">#lalalala</div> 
+                            <div class="tag text-center  mb-2 border border-dark">#games</div>
+                            <div class="tag text-center  mb-2 border border-dark">#fashion</div>
+                            <div class="tag text-center  mb-2 border border-dark">#JustCause4</div>
+                            <div class="tag text-center  mb-2 border border-dark">#stream</div>
+                            <div class="tag text-center  mb-2 border border-dark">#fashion</div>
+                            <div class="tag text-center  mb-2 border border-dark">#lalalala</div>
+                            <div class="tag text-center  mb-2 border border-dark">#stream</div>
+                            <div class="tag text-center  mb-2 border border-dark">#fashion</div>
+                            <div class="tag text-center  mb-2 border border-dark">#lalalala</div>  
+                            <div class="tag text-center  mb-2 border border-dark">#cinematream</div> 
+                        </div>  
+                    </div>      
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="p-t-10 p-b-10">87 Attendees</h1>
+                    </div>
+                    <div class="col-md-12 attendent">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img class="rounded-circle" src="{{ asset('img/Captura6.png') }}" alt=""/>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="font-weight-bold">Logan Patrick</div>
+                                <p><span class="map">{{source('@public_path'~asset('/img/iconos/ic-map.svg')) }}Guadalupe</span></p>
+                            </div>
+                        </div>
+                        <hr/> 
+                    </div>
+                    <div class="col-md-12 attendent">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img class="rounded-circle" src="{{ asset('img/Captura5.png') }}" alt=""/>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="font-weight-bold">Logan Patrick</div>
+                                <p><span class="map">{{source('@public_path'~asset('/img/iconos/ic-map.svg')) }}Guadalupe</span></p>
+                            </div>
+                        </div>
+                        <hr/> 
+                    </div>
+                    <div class="col-md-12 attendent">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img class="rounded-circle" src="{{ asset('img/Captura7.png') }}" alt=""/>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="font-weight-bold">Logan Patrick</div>
+                                <p><span class="map">{{source('@public_path'~asset('/img/iconos/ic-map.svg')) }}Guadalupe</span></p>
+                            </div>
+                        </div>
+                        <hr/> 
+                    </div>
+                    <div class="col-md-12 attendent">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img class="rounded-circle" src="{{ asset('img/Captura6.png') }}" alt=""/>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="font-weight-bold">Logan Patrick</div>
+                                <p><span class="map">{{source('@public_path'~asset('/img/iconos/ic-map.svg')) }}Guadalupe</span></p>
+                            </div>
+                        </div>
+                        <hr/> 
+                    </div>
+                    <div class="col-md-12 attendent">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img class="rounded-circle" src="{{ asset('img/Captura5.png') }}" alt=""/>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="font-weight-bold">Logan Patrick</div>
+                                <p><span class="map">{{source('@public_path'~asset('/img/iconos/ic-map.svg')) }}Guadalupe</span></p>
+                            </div>
+                        </div>
+                        <hr/> 
+                    </div>
+                    <div class="col-md-12 attendent">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img class="rounded-circle" src="{{ asset('img/Captura7.png') }}" alt=""/>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="font-weight-bold">Logan Patrick</div>
+                                <p><span class="map">{{source('@public_path'~asset('/img/iconos/ic-map.svg')) }}Guadalupe</span></p>
+                            </div>
+                        </div>
+                        <hr/> 
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
