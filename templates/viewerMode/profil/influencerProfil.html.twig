@@ -1,0 +1,310 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Influecer Profile!{% endblock %}
+
+{% block body %}
+<div class="influencerProfil">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="profilImg text-center p-t-20"><img src="{{ asset('img/Captura18.png') }}" /></div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="titulo p-t-40">Stella Richardson</div>
+                        <div class="color_salmon"><h3>@stella</h3></div>
+                        <div class="row m-t-10">
+                            <div class="col-md-4">
+                                <div class="followers"><h4>12,342<span class="color_gris p-l-10">Friends<span></h4></div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="following "><h4>1,029<span class="color_gris p-l-10">Following<span></h4></div>
+                            </div>
+                            <div class="offser-md-4"></div>
+                        </div>
+                        <div class="row m-t-10">
+                            <div class="col-md-3">
+                                <div class="border-secondary border p-t-5  p-b-5 p-l-10"><img src="{{ asset('img/Captura19.png') }}" />Friends</div>
+                            </div>
+                            <div class="offset-md-9"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 m-t-20">
+                        <h3>Biography</h3>
+                        <p class="p-t-10 font-weight-bold">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="row p-t-20 p-b-20">
+                    <div class="col-md-4"> 
+                        <b class="fs-60">4.1</b>
+                    </div>
+                    <div class="col-md-8">  
+                        <p class="p-t-20">
+                            <span class="star">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                            <span class="star">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                            <span class="star">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                            <span class="map">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                            <span class="map">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                        </p>
+                        <p class="map">Based on 45 reviews</p>
+                    </div>      
+                </div>
+                <a class="join fs-20 px-5 pt-2 pb-3 text-white" href="#">Request Private Meeting</a>
+                <div class="p-t-20">
+                    <div class="location">
+                        <h3>Location</h3>
+                        <p><span class="map">{{source('@public_path'~asset('/img/iconos/ic-map.svg')) }} East Pasquaslefurt</span></p>                        
+                    </div>
+                    <div class="language">
+                        <h3>Language</h3>
+                        <p><span class="map">{{source('@public_path'~asset('/img/iconos/cl.svg')) }} English</span></p>                        
+                    </div>
+                    <div class="follow_me">
+                        <h3>Follow me</h3>
+                        <!--Aqui hai que hacer y poner los iconos de redes sociales-->
+                        <p><img src="{{ asset('img/Captura20.png') }}" /></p>                        
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Upcoming Events -->
+    <div class="events">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12"><p class="titulo float-left">Upcoming Live  Events</p></div>
+                <div class="col-md-4">
+                    <a {% if is_granted('ROLE_USER')%}href="{{ path('viewerModeEvents_eventUpId') }}" {% endif %}>
+                        <div class="card ">
+                        <div class="cont-img-card ">
+                            <img class="card-img-top" src="{{ asset('img/categories/cooking.jpg') }}"/>                 
+                            <div class="icono-encima">
+                                <div>
+                                    <div class="bookmark">{{source('@public_path'~asset('/img/iconos/ic-bookmark.svg')) }}</div>
+                                </div>
+                            </div>    
+                            <div class="row cuadro_encima">                                             
+                                <div class="col-md-7">
+                                    <div class="row">
+                                        <div class="col-md-6"><img src="{{ asset('img/Captura5.png') }}" /></div>
+                                        <div class="col-md-6">
+                                            <p class="text-white">MandyJTV</p>
+                                            <p>
+                                                <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                                <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                                <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                                <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                            </p>
+                                        </div>  
+                                    </div>      
+                                </div>                             
+                                <div class="col-md-5 text-right">
+                                    <p class="text-white fs-20 "><span class="star">{{source('@public_path'~asset('/img/iconos/ic-user.svg')) }}</span>34</p>
+                                    <p class="text-white ">Only 2 tickets left</p>
+                                </div>                         
+                            </div>
+                        </div>                    
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <div class="float-left">
+                                        <div class="font-weight-bold">21</div>
+                                        <div class="font-weight-bold  color_salmon">DEC</div>
+                                    </div>
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="card-text">
+                                        <div class="font-weight-bold ">String Live Event Title</div>
+                                        <div class="color_salmon">Games</div> 
+                                        <div class="map fs-15">{{source('@public_path'~asset('/img/iconos/ic-map.svg')) }}Live from New York,at 18:30</div>                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>         
+                </div></a>
+                <div class="col-md-4">
+                    <div class="card ">
+                        <div class="cont-img-card ">
+                            <img class="card-img-top" src="{{ asset('img/categories/fashion.jpg') }}"/>                 
+                            <div class="icono-encima">
+                                <div>
+                                    <div class="bookmark">{{source('@public_path'~asset('/img/iconos/ic-bookmark.svg')) }}</div>
+                                </div>
+                            </div>    
+                            <div class="row cuadro_encima">                                             
+                                <div class="col-md-7">
+                                    <div class="row">
+                                        <div class="col-md-6"><img src="{{ asset('img/Captura5.png') }}" /></div>
+                                        <div class="col-md-6">
+                                            <p class="text-white">MandyJTV</p>
+                                            <p>
+                                                <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                                <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                                <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                                <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                            </p>
+                                        </div>  
+                                    </div>      
+                                </div>                             
+                                <div class="col-md-5 text-right">
+                                    <p class="text-white fs-20 "><span class="star">{{source('@public_path'~asset('/img/iconos/ic-user.svg')) }}</span>34</p>
+                                    <p class="text-white ">Only 2 tickets left</p>
+                                </div>                         
+                            </div>
+                        </div>                    
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <div class="float-left">
+                                        <div class="font-weight-bold">21</div>
+                                        <div class="font-weight-bold  color_salmon">DEC</div>
+                                    </div>            
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="card-text">
+                                        <div class="font-weight-bold ">String Live Event Title</div>
+                                        <div class="color_salmon">Games</div> 
+                                        <div class="map fs-15">{{source('@public_path'~asset('/img/iconos/ic-map.svg')) }}Live from New York,at 18:30</div>                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>         
+                </div>
+                <div class="col-md-4">
+                    <div class="card ">
+                        <div class="cont-img-card ">
+                            <img class="card-img-top" src="{{ asset('img/categories/nature.jpg') }}"/>                 
+                            <div class="icono-encima">
+                                <div>
+                                    <div class="bookmark">{{source('@public_path'~asset('/img/iconos/ic-bookmark.svg')) }}</div>
+                                </div>
+                            </div>    
+                            <div class="row cuadro_encima">                                             
+                                <div class="col-md-7">
+                                    <div class="row">
+                                        <div class="col-md-6"><img src="{{ asset('img/Captura5.png') }}" /></div>
+                                        <div class="col-md-6">
+                                            <p class="text-white">MandyJTV</p>
+                                            <p>
+                                                <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                                <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                                <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                                <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                            </p>
+                                        </div>  
+                                    </div>      
+                                </div>                             
+                                <div class="col-md-5 text-right">
+                                    <p class="text-white fs-20 "><span class="star">{{source('@public_path'~asset('/img/iconos/ic-user.svg')) }}</span>34</p>
+                                    <p class="text-white ">Only 2 tickets left</p>
+                                </div>                         
+                            </div>
+                        </div>                    
+                        <div class="card-body ">
+                            <div class="row">
+                                <div class="col-md-2">                 
+                                    <div class=" font-weight-bold">21</div>
+                                    <div class="font-weight-bold  color_salmon">DEC</div>                           
+                                </div>
+                                <div class="col-md-10 ">
+                                    <div class="card-text">
+                                        <div class="font-weight-bold ">String Live Event Title<div>
+                                        <div class="color_salmon ">Games</div> 
+                                        <div class="map fs-15">{{source('@public_path'~asset('/img/iconos/ic-map.svg')) }}Live from New York,at 18:30</div>                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>         
+                </div>
+                           
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Past Live Events -->
+    <div class="video">
+        <div class="video_background"></div>
+        <div class="container">
+            <div class="row">
+				<div class="col"><p class="titulo float-left">Past Live Events</p></div>
+			</div>
+            <div class="row">
+                 <!-- Video Item -->
+             	<div class="col-md-4 video_col">
+					<div class="video_item">
+                        <a {% if is_granted('ROLE_USER')%}href="{{ path('viewerModeEvents_eventVideoId') }}" {% endif %}>
+						<div class="col-md-6 video_body">
+							<div class=" pt-2 color_gris"><p>Monday,18/12/2018</p></div>
+							<div class="font-weight-bold"><p>A Right Media Mix Can Make The Difference</p></div>
+							<div class="color_salmon pb-2"><p>Nature,Outdoors & Oets</p></div>
+						</div>
+						<div class="col-md-6 video_image"><img src="{{ asset('img/categories/cooking.jpg') }}" alt=""></div>	
+					    </a>
+                    </div>
+				</div> 
+                  <!-- Video Item -->
+             	<div class="col-md-4 video_col">
+					<div class="video_item">
+						<div class="col-md-6 video_body">
+							<div class=" pt-2 color_gris"><p>Monday,18/12/2018</p></div>
+							<div class="font-weight-bold"><p>A Right Media Mix Can Make The Difference</p></div>
+							<div class="color_salmon pb-2"><p>Nature,Outdoors & Oets</p></div>
+						</div>
+						<div class="col-md-6 video_image"><img src="{{ asset('img/categories/celebrity.jpg') }}" alt=""></div>	
+					</div>
+				</div> 
+                  <!-- Video Item -->
+             	<div class="col-md-4 video_col">
+					<div class="video_item">
+						<div class="col-md-6 video_body">
+							<div class=" pt-2 color_gris"><p>Monday,18/12/2018</p></div>
+							<div class="font-weight-bold"><p>A Right Media Mix Can Make The Difference</p></div>
+							<div class="color_salmon pb-2"><p>Nature,Outdoors & Oets</p></div>
+						</div>
+						<div class="col-md-6 video_image"><img src="{{ asset('img/categories/business.jpg') }}" alt=""></div>	
+					</div>
+				</div> 
+                  <!-- Video Item -->
+             	<div class="col-md-4 video_col">
+					<div class="video_item">
+						<div class="col-md-6 video_body">
+							<div class=" pt-2 color_gris"><p>Monday,18/12/2018</p></div>
+							<div class="font-weight-bold"><p>A Right Media Mix Can Make The Difference</p></div>
+							<div class="color_salmon pb-2"><p>Nature,Outdoors & Oets</p></div>
+						</div>
+						<div class="col-md-6 video_image"><img src="{{ asset('img/categories/hobbies.jpg') }}" alt=""></div>	
+					</div>
+				</div>
+                  <!-- Video Item -->
+             	<div class="col-md-4 video_col">
+					<div class="video_item">
+						<div class="col-md-6 video_body">
+							<div class=" pt-2 color_gris"><p>Monday,18/12/2018</p></div>
+							<div class="font-weight-bold"><p>A Right Media Mix Can Make The Difference</p></div>
+							<div class="color_salmon pb-2"><p>Nature,Outdoors & Oets</p></div>
+						</div>
+						<div class="col-md-6 video_image"><img src="{{ asset('img/categories/nature.jpg') }}" alt=""></div>	
+					</div>
+				</div> 
+                  <!-- Video Item -->
+             	<div class="col-md-4 video_col">
+					<div class="video_item">
+						<div class="col-md-6 video_body">
+							<div class=" pt-2 color_gris"><p>Monday,18/12/2018</p></div>
+							<div class="font-weight-bold"><p>A Right Media Mix Can Make The Difference</p></div>
+							<div class="color_salmon pb-2"><p>Nature,Outdoors & Oets</p></div>
+						</div>
+						<div class="col-md-6 video_image"><img src="{{ asset('img/categories/travel.jpg') }}" alt=""></div>	
+					</div>
+				</div>        
+            </div>
+        </div>
+    </div> 
+{% endblock %}

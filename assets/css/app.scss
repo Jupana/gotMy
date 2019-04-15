@@ -26,9 +26,6 @@ html,body
     
      
 }
-
-
- 
 header {
 	width: 100%;
 	position: fixed;
@@ -71,7 +68,11 @@ ul
 
 /*Main Navbar*/
     .imglogo{ 
-        width:10%;
+        width:7%;
+    }
+
+    .imglogoFooter{
+        width:15%;
     }
     .join{       
         border-radius: 30px;
@@ -507,6 +508,10 @@ ul
 	font-size: 20px !important;
 }
 
+.imgP img{
+    width: 125px;
+}
+
 /*---Messages---*/
 .shadow
 {
@@ -578,6 +583,20 @@ ul
     right:3%;
     bottom:75%;
 }
+/*---Activity--*/
+.popover{
+    max-width:35% !important;
+    border-radius:5%;
+    left: 160px !important;
+    
+}
+.arrow{
+    left:60px !important;
+}
+.activity_item{
+    width:95%;
+    margin-top:15px;
+}
 
 
   
@@ -624,7 +643,13 @@ ul
         right:-10%;
    
     }
-   
+    .imglogoFooter{
+        width:10%;
+    }
+    .popover{
+        max-width:30% !important;
+        left:215px !important;
+    }
    
    
     
@@ -676,6 +701,9 @@ ul
     .jsCalendar table {
         margin: 2px;
     
+    }
+    .imglogo{
+        width:15%;
     }
 } 
  

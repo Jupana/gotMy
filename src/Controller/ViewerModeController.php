@@ -57,4 +57,11 @@ class ViewerModeController extends AbstractController
             'controller_name' => 'VieweModeController',
         ]);
     }
+
+    public function influencerProfil()
+    {
+        return $this->render('viewerMode/profil/influencerProfil.html.twig', [
+            'controller_name' => 'VieweModeController',
+        ]);
+    }
 }

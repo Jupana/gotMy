@@ -24,4 +24,10 @@ viewerModeEvents_eventUpId:
     controller: App\Controller\ViewerModeController::eventUpcomingId   
 viewerModeEvents_eventVideoId:
     path: /viewerModeEvents/eventVideoId
-    controller: App\Controller\ViewerModeController::eventVideoId        
+    controller: App\Controller\ViewerModeController::eventVideoId 
+
+viewerModeInfluencerProfil:
+    path: /viewerModeInfluencerProfil/id
+    controller: App\Controller\ViewerModeController::influencerProfil 
+
+

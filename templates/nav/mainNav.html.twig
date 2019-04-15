@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
-    <div class="navbar-brand fs-80 font-weight-bold">
+    <div class="navbar-brand p-l-10 fs-80 font-weight-bold">
         <span class="mr-n4" >g</span>
         <img class="img-fluid imglogo" src="{{ asset('Simbolo/GotMy-whiteIcon.png','imagenlogo') }}" />
         <span class="ml-n4 mr-n4">t</span>
@@ -27,8 +27,10 @@
                 <a class="nav-link" id="op3t"  {% if is_granted('ROLE_USER') %} href="{{path('viewerModeMessages')}}"{% endif %}>Menssages</a>
             </li>
             <li class="nav-item ">
-                <a class="size_iconNav" id="op4" href="#">{{source('@public_path'~asset('/img/iconos/ic-activity.svg')) }}</a>
-                <a class="nav-link" id="op4t" href="#" {% if is_granted('ROLE_USER') %}tabindex="0" rel="popover" data-placement="bottom" data-toggle="popover" data-trigger="focus"{% endif %}>Activity</a>
+                <a id="op4" {% if is_granted('ROLE_USER') %}tabindex="0" rel="popover" data-placement="bottom" data-toggle="popover" {% endif %} href="#" >
+                    <span class="size_iconNav" href="#">{{source('@public_path'~asset('/img/iconos/ic-activity.svg')) }}</span>
+                    <span class="nav-link" id="op4t" href="#" >Activity</span>
+                </a>    
             </li>
         </ul> 
     </div> 
@@ -54,51 +56,51 @@
             <div class="row m-t-15">
                 <div class="activity_item">
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-2">
                             <img class="rounded-circle" src="{{ asset('img/Captura7.png') }}" alt="">
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-10">
                             <div class="fs-15 text-dark"><span>Bess Thornton</span></div>
                             <div class="color_gris ">Yesterday</div>
+                            <hr/> 
                         </div> 
-                    </div> 
-                    <hr/>   
+                    </div>                   
                 </div>
                  <div class="activity_item">
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-2">
                             <img class="rounded-circle" src="{{ asset('img/Captura6.png') }}" alt="">
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-10">
                             <div class="fs-15 text-dark"><span>Bess Thornton</span></div>
                             <div class="color_gris ">Yesterday</div>
+                            <hr/> 
                         </div> 
-                    </div> 
-                    <hr/>     
+                    </div>    
                 </div>
                  <div class="activity_item">
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-2">
                             <img class="rounded-circle" src="{{ asset('img/Captura7.png') }}" alt="">
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-10">
                             <div class="fs-15 text-dark"><span>Bess Thornton</span></div>
                             <div class="color_gris ">Yesterday</div>
+                            <hr/> 
                         </div> 
-                    </div> 
-                     <hr/>     
+                    </div>     
                 </div>
                  <div class="activity_item">
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-2">
                             <img class="rounded-circle" src="{{ asset('img/Captura6.png') }}" alt="">
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-10">
                             <div class="fs-15 text-dark"><span>Bess Thornton</span></div>
                             <div class="color_gris ">Yesterday</div>
+                            <hr/> 
                         </div> 
-                    </div> 
-                    <hr/>     
+                    </div>   
                 </div>
                 <div class="col-md-12">
                     <div class="color_salmon text-center fs-15 p-b-15"><a href="#">Show all notificacions</a></div>
