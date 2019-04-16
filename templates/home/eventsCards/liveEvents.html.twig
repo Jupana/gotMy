@@ -1,0 +1,83 @@
+<!--CARD lIVE EVENTS-->
+
+<div class="col-md-4">
+    <a {% if is_granted('ROLE_USER')%}href="{{ path('viewerModeEvents_eventId') }}" {% endif %}><div class="card ">
+        <div class="cont-img-card">
+            <img class="card-img-top" src="{{ asset('img/categories/cooking.jpg') }}"/>
+            <div class="icono-encima"><a href="#" class="size_icon">{{source('@public_path'~asset('/img/iconos/button-live.svg')) }}</a></div>
+            <div class="texto-encima text-white fs-30">Thrill Friends And Family With a Make...
+                <p class="fs-20">Cooking</p>
+            </div>
+        </div>                    
+        <div class="card-body">
+            <div class="float-left"><img src="{{ asset('img/Captura5.png') }}" /></div>
+                <div class="card-text float-right">
+                    <p>
+                        <span>Stella Richardson</span>
+                        <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                        <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                        <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                        <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                    </p>
+                    <div class="fs-20">
+                        <p><span class="map">{{source('@public_path'~asset('/img/iconos/ic-map.svg')) }}Singapur</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>         
+</div>
+
+<!--A partir de aqui se tendria que borrar en cuando se haga el FOR y se IMPRIME DE LA API-->
+<div class="col-md-4">
+    <div class="card ">
+        <div class="cont-img-card">
+            <img class="card-img-top" src="{{ asset('img/categories/tiktok.jpg') }}"/>
+            <div class="icono-encima"><a href="#" class="size_icon">{{source('@public_path'~asset('/img/iconos/button-live.svg')) }}</a></div>
+            <div class="texto-encima text-white fs-30">Thrill Friends And Family With a Make...
+                <p class="fs-20">Cooking</p>
+            </div>
+        </div> 
+        <div class="card-body">
+            <div class="float-left"><img src="{{ asset('img/Captura5.png') }}" /></div>
+            <div class="card-text float-right">
+                <p>
+                    <span>Stella Richardson</span>
+                    <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                    <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                    <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                    <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                </p>
+                <div class="fs-20">
+                    <p><span class="map">{{source('@public_path'~asset('/img/iconos/ic-map.svg')) }}Singapur</span></p>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>   
+<div class="col-md-4">
+    <div class="card ">
+        <div class="cont-img-card">
+            <img class="card-img-top" src="{{ asset('img/categories/fitness.jpg') }}"/>
+            <div class="icono-encima"><a href="#" class="size_icon">{{source('@public_path'~asset('/img/iconos/button-live.svg')) }}</a></div>
+            <div class="texto-encima text-white fs-30">Thrill Friends And Family With a Make...
+                <p class="fs-20">Cooking</p>
+            </div>
+        </div> 
+        <div class="card-body">
+            <div class="float-left"><img src="{{ asset('img/Captura5.png') }}" /></div>
+            <div class="card-text float-right">
+                <p>
+                    <span>Stella Richardson</span>
+                    <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                    <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                    <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                    <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                </p>
+                <div class="fs-20">
+                    <p><span class="map">{{source('@public_path'~asset('/img/iconos/ic-map.svg')) }}Singapur</span></p>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>

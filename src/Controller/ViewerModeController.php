@@ -58,9 +58,23 @@ class ViewerModeController extends AbstractController
         ]);
     }
 
+    public function requestMeeting()
+    {
+        return $this->render('viewerMode/messages/messages_parts/requestMeeting.html.twig', [
+            'controller_name' => 'VieweModeController',
+        ]);
+    }
+
+    public function viewRequestMeeting()
+    {
+        return $this->render('viewerMode/messages/viewRequestMeeting.html.twig', [
+            'controller_name' => 'VieweModeController',
+        ]);
+    }
+
     public function influencerProfil()
     {
-        return $this->render('viewerMode/profil/influencerProfil.html.twig', [
+        return $this->render('viewerMode/profil/index.html.twig', [
             'controller_name' => 'VieweModeController',
         ]);
     }

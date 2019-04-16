@@ -1,0 +1,151 @@
+<!--CARD UPCOMING EVENTS-->
+
+<div class="col-md-4">
+    <a {% if is_granted('ROLE_USER')%}href="{{ path('viewerModeEvents_eventUpId') }}" {% endif %}>
+        <div class="card ">
+            <div class="cont-img-card ">
+                <img class="card-img-top" src="{{ asset('img/categories/cooking.jpg') }}"/>                 
+                <div class="icono-encima">
+                    <div>
+                        <div class="bookmark">{{source('@public_path'~asset('/img/iconos/ic-bookmark.svg')) }}</div>
+                    </div>
+                </div>    
+                <div class="row cuadro_encima">                                             
+                    <div class="col-md-7">
+                        <div class="row">
+                            <div class="col-md-6"><img src="{{ asset('img/Captura5.png') }}" /></div>
+                            <div class="col-md-6">
+                                <p class="text-white">MandyJTV</p>
+                                <p>
+                                    <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                    <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                    <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                    <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                </p>
+                            </div>  
+                        </div>      
+                    </div>                             
+                    <div class="col-md-5 text-right">
+                        <p class="text-white fs-20 "><span class="star">{{source('@public_path'~asset('/img/iconos/ic-user.svg')) }}</span>34</p>
+                        <p class="text-white ">Only 2 tickets left</p>
+                    </div>                         
+                </div>
+            </div>                    
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="float-left">
+                            <div class="font-weight-bold">21</div>
+                            <div class="font-weight-bold  color_salmon">DEC</div>
+                        </div>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="card-text">
+                            <div class="font-weight-bold ">String Live Event Title</div>
+                            <div class="color_salmon">Games</div> 
+                            <div class="map fs-15">{{source('@public_path'~asset('/img/iconos/ic-map.svg')) }}Live from New York,at 18:30</div>                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>         
+</div>
+
+<!--A partir de aqui se tendria que borrar en cuando se haga el FOR y se IMPRIME DE LA API-->
+<div class="col-md-4">
+    <div class="card ">
+        <div class="cont-img-card ">
+            <img class="card-img-top" src="{{ asset('img/categories/fashion.jpg') }}"/>                 
+            <div class="icono-encima">
+                <div>
+                    <div class="bookmark">{{source('@public_path'~asset('/img/iconos/ic-bookmark.svg')) }}</div>
+                </div>
+            </div>    
+            <div class="row cuadro_encima">                                             
+                <div class="col-md-7">
+                    <div class="row">
+                        <div class="col-md-6"><img src="{{ asset('img/Captura5.png') }}" /></div>
+                        <div class="col-md-6">
+                            <p class="text-white">MandyJTV</p>
+                            <p>
+                                <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                            </p>
+                        </div>  
+                    </div>      
+                </div>                             
+                <div class="col-md-5 text-right">
+                    <p class="text-white fs-20 "><span class="star">{{source('@public_path'~asset('/img/iconos/ic-user.svg')) }}</span>34</p>
+                    <p class="text-white ">Only 2 tickets left</p>
+                </div>                         
+            </div>
+        </div>                    
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="float-left">
+                        <div class="font-weight-bold">21</div>
+                        <div class="font-weight-bold  color_salmon">DEC</div>
+                     </div>            
+                </div>
+                <div class="col-md-10">
+                    <div class="card-text">
+                        <div class="font-weight-bold ">String Live Event Title</div>
+                        <div class="color_salmon">Games</div> 
+                        <div class="map fs-15">{{source('@public_path'~asset('/img/iconos/ic-map.svg')) }}Live from New York,at 18:30</div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>         
+</div>
+<div class="col-md-4">
+    <div class="card ">
+        <div class="cont-img-card ">
+            <img class="card-img-top" src="{{ asset('img/categories/nature.jpg') }}"/>                 
+            <div class="icono-encima">
+                <div>
+                    <div class="bookmark">{{source('@public_path'~asset('/img/iconos/ic-bookmark.svg')) }}</div>
+                </div>
+            </div>    
+            <div class="row cuadro_encima">                                             
+                <div class="col-md-7">
+                    <div class="row">
+                        <div class="col-md-6"><img src="{{ asset('img/Captura5.png') }}" /></div>
+                        <div class="col-md-6">
+                            <p class="text-white">MandyJTV</p>
+                            <p>
+                                <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                            </p>
+                        </div>  
+                    </div>      
+                </div>                             
+                <div class="col-md-5 text-right">
+                    <p class="text-white fs-20 "><span class="star">{{source('@public_path'~asset('/img/iconos/ic-user.svg')) }}</span>34</p>
+                    <p class="text-white ">Only 2 tickets left</p>
+                </div>                         
+            </div>
+        </div>                    
+        <div class="card-body ">
+            <div class="row">
+                <div class="col-md-2">                 
+                    <div class=" font-weight-bold">21</div>
+                    <div class="font-weight-bold  color_salmon">DEC</div>                           
+                </div>
+                <div class="col-md-10 ">
+                    <div class="card-text">
+                        <div class="font-weight-bold ">String Live Event Title<div>
+                        <div class="color_salmon ">Games</div> 
+                        <div class="map fs-15">{{source('@public_path'~asset('/img/iconos/ic-map.svg')) }}Live from New York,at 18:30</div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>            

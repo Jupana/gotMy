@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Influecer Profile!{% endblock %}
+
+{% block body %}
+    {% include 'viewerMode/profil/influencerProfil.html.twig' %}
+    <!-- Upcoming Events -->
+    <div class="events">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12"><p class="titulo float-left">Upcoming Live  Events</p></div>
+                {% include 'home/eventsCards/upcomingEvents.html.twig' %}          
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Past Live Events -->
+    <div class="video">
+        <div class="container">
+            <div class="row">
+				<div class="col-md-12"><p class="titulo float-left">Past Live Events</p></div>
+                {% include 'home/eventsCards/videos.html.twig' %} 
+            </div>    
+        </div>
+    </div> 
+{% endblock %}

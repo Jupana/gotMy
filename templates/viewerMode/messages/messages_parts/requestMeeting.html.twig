@@ -1,0 +1,159 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Request Meeting{% endblock %}
+
+{% block body %}
+    <script type="text/javascript">
+     window.onload = function() {
+        document.getElementById("op3").style.color="#F75A60";
+        document.getElementById("op3t").style.color="white";
+        }
+    </script> 
+    <div class="bg-dark p-t-20 p-b-20">
+       <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8">
+                    <img class="img-fluid imglogo" src="{{ asset('img/Simbolo/GotMy-Black-Avatar.jpg') }}" />
+                    <span class="color_gris fs-25">Request Private Meeting</span>
+                </div>
+                <div class="col-md-4">
+                    <a href="{{ path('viewerModeInfluencerProfil') }}" class="border-radius bg_gris fs-17 px-5 pt-3 pb-3 text-white " >Cancel</a>
+                    <a href="{{ path('viewerModeViewRequestMeeting') }}" class="join fs-17 px-5 pt-3 pb-3 text-white " >Send Request</a>
+                </div>
+            </div>
+       </div> 
+    </div>
+    <div class="requestMeeting">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="profilImg text-center p-t-20"><img src="{{ asset('img/Captura18.png') }}" /></div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="titulo p-t-40">Stella Richardson</div>
+                            <div class="color_salmon"><h3>@stella</h3></div>
+                            <div class="row m-t-10">
+                                <div class="col-md-4">
+                                    <div class="followers"><h4>12,342<span class="color_gris p-l-10">Friends<span></h4></div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="following "><h4>1,029<span class="color_gris p-l-10">Following<span></h4></div>
+                                </div>
+                                <div class="offser-md-4"></div>
+                            </div>
+                            <div class="row m-t-10">
+                                <div class="col-md-3">
+                                    <div class="border-secondary border p-t-5  p-b-5 p-l-10"><img src="{{ asset('img/Captura19.png') }}" />Friends</div>
+                                </div>
+                                <div class="offset-md-9"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                <div class="col-md-4">
+                    <div class="row p-t-60 p-b-20">
+                        <div class="col-md-4"> 
+                            <b class="fs-60">4.1</b>
+                        </div>
+                        <div class="col-md-8">  
+                            <p class="p-t-20">
+                                <span class="star">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                <span class="star">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                <span class="star">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                <span class="map">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                <span class="map">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                            </p>
+                            <p class="map">Based on 45 reviews</p>
+                        </div>      
+                    </div>
+                </div>
+            </div>
+            <div class="row p-t-30 p-b-30">
+                <div class="col-md-4 ">
+                    <h3>Private Meeting</h3>
+                    <h5 class="p-t-10">Just For Fun</h5>
+                    <h6 class="color_gris">I would like to have a good time with you</h6> 
+                    <div class="custom-control custom-radio p-t-10">
+                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                        <label class=" font-weight-bold p-l-10 custom-control-label" for="customRadio1">Party Appearance</label>
+                    </div>   
+                    <div class="custom-control custom-radio p-t-10">
+                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                        <label class=" font-weight-bold p-l-10 custom-control-label" for="customRadio2">Playing Games</label>
+                    </div>
+                    <div class="custom-control custom-radio p-t-10">
+                        <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                        <label class=" font-weight-bold p-l-10 custom-control-label" for="customRadio3">Hangout</label>
+                    </div>
+                    <div class="custom-control custom-radio p-t-10 p-b-10">
+                        <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input">
+                        <label class=" font-weight-bold p-l-10 custom-control-label" for="customRadio4">Other reason</label>
+                    </div> 
+                    <div class="m-l-20 input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Surprise a friend" aria-label="Surprise a friend" aria-describedby="basic-addon2">
+                    </div> 
+                    <hr/>
+                    <div class="category_meeting">
+                        <h5 class="p-t-10">Business</h5>
+                        <h6 class="color_gris">I have a business proposal for you</h6>
+                    </div>
+                    <hr/>
+                    <div class="category_meeting">
+                        <h5 class="p-t-10">Educacion</h5>
+                        <h6 class="color_gris">I would like to learn from you</h6>
+                    </div>
+                    <hr/> 
+                    <div class="category_meeting">
+                        <h5 class="p-t-10">Other reason</h5>
+                        <h6 class="color_gris">I have a special request</h6>
+                    </div>
+                    <hr/>       
+                </div>
+                <div class="col-md-4">
+                    <h3>Explain your purpose</h3>
+                    <h6 class="color_gris">Limit is 1000 characters. You can add external links using http://</h6> 
+                    <textarea class="w-100  font-weight-bold m-t-20 p-l-20  p-r-10 p-t-20">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</textarea>               
+                </div>
+                <div class="col-md-4">
+                    <h3>Attendees</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6 class="color_gris">Number attendess </h6> 
+                            <div class="border-secondary border p-t-5  p-b-5 p-l-10">60 Attendees</div>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="color_gris">Max price per ticket</h6> 
+                            <div class="border-secondary border p-t-5  p-b-5 p-l-10">$ 2,000</div>
+                        </div>
+                    <div>
+                    <h3 class="m-t-30 m-b-20 p-l-15">Date and time</h3>
+                    <div class="custom-control custom-radio p-t-10 m-l-15">
+                        <input type="radio" id="customRadio6" name="customRadio" class="custom-control-input">
+                        <label class=" font-weight-bold p-l-10 custom-control-label" for="customRadio6">I do not care about the date and time</label>
+                    </div>
+                    <div class="custom-control custom-radio p-t-10 m-l-15">
+                        <input type="radio" id="customRadio7" name="customRadio" class="custom-control-input">
+                        <label class=" font-weight-bold p-l-10 custom-control-label" for="customRadio7">I'd like a specific date and time</label>
+                    </div>
+                    <div class="m-t-20">
+                        <h6 class="color_gris m-l-40">Live Event Date</h6> 
+                        <div class="w-100 border-secondary font-weight-bold border p-t-5  p-b-5 p-l-30 m-l-40"><span class="calendar p-r-10"> {{source('@public_path'~asset('/img/iconos/ic-event.svg')) }}</span>Thuersday,21 dec 2018</div>
+                    </div>
+                    <div class="row m-t-20 m-l-40">
+                        <div class="col-md-6">
+                            <h6 class="color_gris">Start time</h6> 
+                            <div class="border-secondary border p-t-5  p-b-5 p-l-10"><span class="color_salmon p-r-10"> {{source('@public_path'~asset('/img/iconos/ic-time.svg')) }}</span>12:30</div>
+                        </div>
+                        <div class="col-md-6">
+                            <h6 class="color_gris">End time</h6> 
+                            <div class="color_gris border-secondary border p-t-5  p-b-5 p-l-10"><span class=" p-r-10"> {{source('@public_path'~asset('/img/iconos/ic-time.svg')) }}</span>00:00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+              
+{% endblock %}

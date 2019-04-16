@@ -1,0 +1,115 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Request Meeting{% endblock %}
+
+{% block body %}
+    <script type="text/javascript">
+     window.onload = function() {
+        document.getElementById("op3").style.color="#F75A60";
+        document.getElementById("op3t").style.color="white";
+        }
+    </script> 
+    <div class="requestMeeting">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 color_salmon p-t-30 fs-20"><a href="{{ path('viewerModeMessages') }}">< Back to Private Meetings</a></div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="profilImg text-center p-t-20"><img src="{{ asset('img/Captura18.png') }}" /></div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="titulo p-t-40">Stella Richardson</div>
+                            <div class="color_salmon"><h3>@stella</h3></div>
+                            <div class="row m-t-10">
+                                <div class="col-md-4">
+                                    <div class="followers"><h4>12,342<span class="color_gris p-l-10">Friends<span></h4></div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="following "><h4>1,029<span class="color_gris p-l-10">Following<span></h4></div>
+                                </div>
+                                <div class="offser-md-4"></div>
+                            </div>
+                            <div class="row m-t-10">
+                                <div class="col-md-3">
+                                    <div class="border-secondary border p-t-5  p-b-5 p-l-10"><img src="{{ asset('img/Captura19.png') }}" />Friends</div>
+                                </div>
+                                <div class="offset-md-9"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                <div class="col-md-4">
+                    <div class="row p-t-60 p-b-20">
+                        <div class="col-md-4"> 
+                            <b class="fs-60">4.1</b>
+                        </div>
+                        <div class="col-md-8">  
+                            <p class="p-t-20">
+                                <span class="star">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                <span class="star">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                <span class="star">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                <span class="map">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                                <span class="map">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                            </p>
+                            <p class="map">Based on 45 reviews</p>
+                        </div>      
+                    </div>
+                </div>
+            </div>
+            <div class="row p-t-30 p-b-30">
+                <div class="col-md-4 ">
+                    <h1>Private Meeting</h1>
+                    <div class="row m-t-20">
+                        <div class="col-md-2 p-t-10">
+                            <span class="color_gris">{{source('@public_path'~asset('/img/iconos/ic-user.svg')) }}</span>
+                        </div>
+                        <div class="col-md-10">
+                            <h5>Attendess</h5>
+                            <h6 class="color_gris">23 attendees</h6>
+                        </div>    
+                    </div>
+                    <hr/>
+                    <div class="row">
+                        <div class="col-md-2 p-t-10">
+                            <span class="color_gris">{{source('@public_path'~asset('/img/iconos/ic-ganancia.svg')) }}</span>
+                        </div> 
+                        <div class="col-md-10">
+                            <h5 class="p-t-10">Price per ticket</h5>
+                            <h6 class="color_gris">$ 20.00</h6>
+                        </div> 
+                    </div>
+                    <hr/> 
+                    <div class="row">
+                        <div class="col-md-2 p-t-10">
+                            <span class="color_gris">{{source('@public_path'~asset('/img/iconos/ic-event.svg')) }}</span>
+                        </div>
+                        <div class="col-md-10"> 
+                            <h5 class="p-t-10">Date and time</h5>
+                            <h6 class="color_gris">January,2019, From 12:00 to 14:00</h6>
+                        </div> 
+                    </div>
+                    <hr/> 
+                    <div class="row">
+                        <div class="col-md-2 p-t-10">
+                            <span class="color_gris">{{source('@public_path'~asset('/img/iconos/ic-time.svg')) }}</span>
+                        </div> 
+                        <div class="col-md-10">   
+                            <h5 class="p-t-10">Time estimated</h5>
+                            <h6 class="color_gris">2 hours</h6>
+                        </div> 
+                    </div>
+                    <hr/>       
+                </div>
+                <div class="col-md-8">
+                    <h1>Your purpose</h1>
+                    <p class="w-100  font-weight-bold m-t-20 ">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>                       
+                    <div class="m-t-60">
+                        <a href="{{ path('viewerModeInfluencerProfil') }}" class=" border-radius bg_gris fs-17 px-5 pt-3 pb-3 text-white " >Cancel requests</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+              
+{% endblock %}

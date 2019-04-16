@@ -48,84 +48,7 @@
                 <div class="col-md-12">
                     <p class="titulo float-left p-t-30 p-b-30">Influencers</p>
                 </div>
-                <div class="col-md-2">
-                    <div class="shadow m-t-20">
-                        <div class="text-center p-t-20"><img src="{{ asset('img/Captura6.png') }}" /></div>
-                        <div class="text-center">Bess Thornton</div>
-                        <div class="text-center p-b-20">
-                            <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
-                            <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
-                            <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
-                            <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span> 
-                            <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>                                 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="shadow m-t-20">                    
-                        <div class="text-center p-t-20"><img src="{{ asset('img/Captura7.png') }}" /></div>
-                        <div class="text-center">Amy Peters</div>
-                        <div class="text-center p-b-20">
-                            <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
-                            <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
-                            <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
-                            <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span> 
-                            <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>                                 
-                        </div>
-                    </div>
-                </div>
-                 <div class="col-md-2">
-                    <div class="shadow m-t-20">
-                        <div class="text-center p-t-20"><img src="{{ asset('img/Captura6.png') }}" /></div>
-                        <div class="text-center">Bess Thornton</div>
-                        <div class="text-center p-b-20">
-                            <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
-                            <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
-                            <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
-                            <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span> 
-                            <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>                                 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="shadow m-t-20">                    
-                        <div class="text-center p-t-20"><img src="{{ asset('img/Captura7.png') }}" /></div>
-                        <div class="text-center">Amy Peters</div>
-                        <div class="text-center p-b-20">
-                            <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
-                            <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
-                            <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
-                            <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span> 
-                            <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>                                 
-                        </div>
-                    </div>
-                </div>
-                 <div class="col-md-2">
-                    <div class="shadow m-t-20">
-                        <div class="text-center p-t-20"><img src="{{ asset('img/Captura6.png') }}" /></div>
-                        <div class="text-center">Bess Thornton</div>
-                        <div class="text-center p-b-20">
-                            <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
-                            <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
-                            <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
-                            <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span> 
-                            <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>                                 
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="shadow m-t-20">                    
-                        <div class="text-center p-t-20"><img src="{{ asset('img/Captura7.png') }}" /></div>
-                        <div class="text-center">Amy Peters</div>
-                        <div class="text-center p-b-20">
-                            <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
-                            <span class="star size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
-                            <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
-                            <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span> 
-                            <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>                                 
-                        </div>
-                    </div>
-                </div>                   
+                {% include 'viewerMode/profil/influencersCard.html.twig' %}                  
             </div>
         </div>
     </div>
@@ -283,13 +206,15 @@
                  <!-- Video Item -->
              	<div class="col-md-4 video_col">
 					<div class="video_item">
-						<div class="col-md-6 video_body">
-							<div class=" pt-2 color_gris"><p>Monday,18/12/2018</p></div>
-							<div class="font-weight-bold"><a href="#">A Right Media Mix Can Make The Difference</a></div>
-							<div class="color_salmon pb-2"><p>Nature,Outdoors & Oets</p></div>
-						</div>
-						<div class="col-md-6 video_image"><img src="{{ asset('img/categories/cooking.jpg') }}" alt=""></div>	
-					</div>
+                        <a {% if is_granted('ROLE_USER')%}href="{{ path('viewerModeEvents_eventVideoId') }}" {% endif %}>
+                            <div class="col-md-6 video_body">
+                                <div class=" pt-2 color_gris"><p>Monday,18/12/2018</p></div>
+                                <div class="font-weight-bold"><p>A Right Media Mix Can Make The Difference</p></div>
+                                <div class="color_salmon pb-2"><p>Nature,Outdoors & Oets</p></div>
+                            </div>
+                            <div class="col-md-6 video_image"><img src="{{ asset('img/categories/cooking.jpg') }}" alt=""></div>	
+                        </a>
+                    </div>
 				</div>        
             </div>
         </div>
