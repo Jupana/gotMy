@@ -37,4 +37,9 @@ viewerModeInfluencerProfil:
     path: /viewerModeInfluencerProfil/id
     controller: App\Controller\ViewerModeController::influencerProfil 
 
+viewerModeChat:
+    path: /viewerModeChat/id
+    controller: App\Controller\ViewerModeController::chat 
+
+
 

@@ -1,0 +1,135 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Request Meeting{% endblock %}
+
+{% block body %}
+    <script type="text/javascript">
+     window.onload = function() {
+        document.getElementById("op3").style.color="#F75A60";
+        document.getElementById("op3t").style.color="white";
+        }
+    </script> 
+    <div class="chat">
+        <div class="container">
+            <div class="messaging">
+                <div class="inbox_msg">
+                    <div class="inbox_people">
+                        <div class="heading">
+                            <div class="recent_heading color_salmon">
+                                <a href="{{ path('viewerModeMessages') }}"> < Back to Inbox</a>
+                            </div>
+                        </div>
+                        <h4>Administrator</h4>
+                        <div class="heading">                      
+                            <div class="chat_list">
+                                <div class="row chat_people">
+                                    <div class="col-md-2 chat_img"> 
+                                        <img class="rounded-circle"  src="{{ asset('img/Captura6.png') }}" alt="">
+                                    </div>
+                                    <div class="col-md-6 chat_ib">
+                                        <h5>Charlotte Roberson</h5>
+                                        <p><span class="map">{{source('@public_path'~asset('/img/iconos/ic-map.svg')) }}Guadalupe</span></p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="border-secondary border p-t-5  p-b-5 p-l-10"><img src="{{ asset('img/Captura19.png') }}" />Friends</div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                        <h4>Participants</h4>
+                        <div class="inbox_chat">
+                            <div class="chat_list active_chat">
+                                <div class="chat_people">
+                                    <div class="chat_img"> 
+                                        <img class="rounded-circle"  src="{{ asset('img/Captura18.png') }}" alt="">
+                                    </div>
+                                <div class="chat_ib">
+                                    <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
+                                    <p>Test, which is a new approach to have all solutions 
+                                        astrology under one roof.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat_list">
+                            <div class="chat_people">
+                                <div class="chat_img"> 
+                                    <img class="rounded-circle"  src="{{ asset('img/Captura6.png') }}" alt="">
+                                </div>
+                                <div class="chat_ib">
+                                    <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
+                                    <p>Test, which is a new approach to have all solutions 
+                                         astrology under one roof.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat_list">
+                            <div class="chat_people">
+                                <div class="chat_img"> 
+                                    <img class="rounded-circle"  src="{{ asset('img/Captura7.png') }}" alt="">
+                                </div>
+                                <div class="chat_ib">
+                                    <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
+                                    <p>Test, which is a new approach to have all solutions 
+                                         astrology under one roof.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="mesgs">
+                    <div class="msg_history">
+                        <div class="incoming_msg">
+                            <div class="incoming_msg_img"> 
+                                <img class="rounded-circle" src="{{ asset('img/Captura18.png') }}" alt=""> 
+                            </div>
+                            <div class="received_msg">
+                                <div class="received_withd_msg">
+                                    <p>Test which is a new approach to have all
+                                        solutions</p>
+                                    <span class="time_date"> 11:01 AM    |    June 9</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="outgoing_msg">
+                            <div class="sent_msg">
+                                <p>Test which is a new approach to have all
+                                solutions</p>
+                                <span class="time_date"> 11:01 AM    |    June 9</span> 
+                            </div>
+                        </div>
+                        <div class="incoming_msg">
+                            <div class="incoming_msg_img"> 
+                                <img class="rounded-circle" src="{{ asset('img/Captura18.png') }}" alt=""> 
+                            </div>
+                            <div class="received_msg">
+                                <div class="received_withd_msg">
+                                    <p>Test which is a newghjhbfhjsfbjskahfkSBFJABSFHAJF approactjdgydjydjgdjhhjhjdghjhfjh to have all
+                                        solutions</p>
+                                    <span class="time_date"> 11:01 AM    |    June 9</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="outgoing_msg">
+                            <div class="sent_msg">
+                                <p>Test which is a neGFHAJKFHJKFBHIAJKFw approachdhdjdtjedtjtjd to have all
+                                solutions</p>
+                                <span class="time_date"> 11:01 AM    |    June 9</span> 
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="type_msg">
+                        <div class="input_msg_write">
+                            <input type="text" class="write_msg" placeholder="Type a message" />
+                            <button class="msg_send_btn" type="button"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+              
+{% endblock %}

@@ -78,4 +78,11 @@ class ViewerModeController extends AbstractController
             'controller_name' => 'VieweModeController',
         ]);
     }
+
+    public function chat()
+    {
+        return $this->render('viewerMode/messages/messages_parts/chat.html.twig', [
+            'controller_name' => 'VieweModeController',
+        ]);
+    }
 }

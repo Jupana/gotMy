@@ -14,6 +14,7 @@ $(function(){
   });
 });
 
+
 // Color link en click Popap y quitar color en los demas 
 var newPopup = function (){
   if (this.style.color === ''){
