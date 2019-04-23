@@ -58,6 +58,13 @@ class ViewerModeController extends AbstractController
         ]);
     }
 
+    public function createMessage()
+    {
+        return $this->render('viewerMode/messages/messages_parts/createMessage.html.twig', [
+            'controller_name' => 'VieweModeController',
+        ]);
+    }
+
     public function requestMeeting()
     {
         return $this->render('viewerMode/messages/messages_parts/requestMeeting.html.twig', [
@@ -67,7 +74,7 @@ class ViewerModeController extends AbstractController
 
     public function viewRequestMeeting()
     {
-        return $this->render('viewerMode/messages/viewRequestMeeting.html.twig', [
+        return $this->render('viewerMode/messages/messages_parts/viewRequestMeeting.html.twig', [
             'controller_name' => 'VieweModeController',
         ]);
     }

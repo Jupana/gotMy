@@ -1,0 +1,107 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Request Meeting{% endblock %}
+
+{% block body %}
+    <script type="text/javascript">
+     window.onload = function() {
+        document.getElementById("op3").style.color="#F75A60";
+        document.getElementById("op3t").style.color="white";
+        }
+    </script> 
+    <div class="createMessage">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="color_salmon p-t-20 fs-18">
+                        <a href="{{ path('viewerModeMessages') }}"><b class="p-r-10"><</b> Back to Inbox</a>
+                    </div>
+                    <div class="admin">
+                        <h4 class="p-t-20 p-b-20 font-weight-bold">Administrator</h4>
+                        <div class="row">
+                            <div class="col-md-3"> 
+                                <img class="rounded-circle " src="{{ asset('img/categories/manga.jpg') }}" alt="">
+                            </div>
+                            <div class="col-md-9">
+                                <h5>Charlotte Roberson</h5>
+                                <p><span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-map.svg')) }}Guadalupe</span></p>
+                            </div>                  
+                        </div>
+                        <hr/>
+                    </div>
+                    <div class="participants">
+                        <h4 class="font-weight-bold p-t-10">Participants</h4>
+                        <div class="search p-t-10">
+                            <form action="#" id="search" class="search d-flex flex-md-row flex-column align-items-center justify-content-between">
+                                <div class=" border d-flex flex-row align-items-center justify-content-start">
+                                    {{source('@public_path'~asset('/img/iconos/ic-search.svg')) }}
+                                    <input type="search" class="search_input" placeholder="Search username.." required="required">
+                                    <button type="submit" hidden></button>
+                                </div>								   
+                            </form>                  
+                        </div> 
+                        <p class="p-t-20 fs-17 color_gris">Type the person's name in the search box and add to group chat</p>
+                        <div class="user_chat">
+                            <div class="row mb-n3">
+                                <div class="col-md-2 "> 
+                                    <img class="rounded-circle"src="{{ asset('img/Captura6.png') }}" alt="">
+                                </div>
+                                <div class="col-md-8">
+                                    <h5>Charlotte Roberson</h5>
+                                    <p><span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-map.svg')) }}Guadalupe</span></p>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="color_salmon">{{source('@public_path'~asset('/img/iconos/feedback-success.svg')) }}</div>
+                                </div> 
+                            </div>
+                            <hr/>
+                        </div> 
+                    </div>   
+                </div>
+                <div class="col-md-8 border-left m-t-30 m-b-30">
+                    <div class="float-right">
+                        <a href="{{ path('viewerModeMessagesCreate') }}" class="border-radius bg_gris fs-17 px-5 pt-3 pb-3 text-white " >Cancel</a>
+                        <a href="{{ path('viewerModeMessagesCreate') }}" class="join fs-17 px-5 pt-3 pb-3 text-white " >Save</a>
+                    </div>
+                    <div class="row m-t-50">
+                        <div class="col-md-2">
+                            <div class="rounded-circle border">
+                                <img class="rounded-circle py-4 m-l-30" src="{{ asset('img/Captura21.png') }}" alt="">                          
+                            </div>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="color_gris p-b-5">Group name</div>
+                            <input type="text" class="w-100 border py-3"/>                              
+                        </div>
+                    </div>
+
+                    <h3 class="p-t-20 p-b-20">**Esto aparece solo despues de dar save y deasparece lo de arriba junto con los bottones .El template del chat tendria que estar vacio ya que es un nuevo grupo </h3>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img class="rounded-circle" src="{{ asset('img/categories/carft.jpg') }}" alt="">
+                        </div>
+                        <div class="col-md-7 p-t-20">
+                            <div class="fs-30 font-weight-bold"><span>San Diego Vacacion Rental</span></div>   
+                        </div>
+                        <div class="col-md-3">
+                            <div class="color_salmon p-t-25 fs-16">
+                                <a href="#">Edit group chat</a>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="search p-t-30">
+                        <form action="#" id="search" class="search d-flex flex-md-row flex-column align-items-center justify-content-between">
+                            <div class=" border d-flex flex-row align-items-center justify-content-start">
+                                {{source('@public_path'~asset('/img/iconos/ic-search.svg')) }}
+                                <input type="search" class="search_input" placeholder="Search message.." required="required">
+                                <button type="submit" hidden></button>
+                            </div>								   
+                        </form>                  
+                    </div>
+                    {% include 'viewerMode/messages/messages_parts/templateChat.html.twig' %} 
+                </div>
+            </div>  
+        </div>
+    </div>
+           
+{% endblock %}

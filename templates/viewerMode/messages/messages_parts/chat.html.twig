@@ -11,123 +11,115 @@
     </script> 
     <div class="chat">
         <div class="container">
-            <div class="messaging">
-                <div class="inbox_msg">
-                    <div class="inbox_people">
-                        <div class="heading">
-                            <div class="recent_heading color_salmon">
-                                <a href="{{ path('viewerModeMessages') }}"> < Back to Inbox</a>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="color_salmon p-t-20 fs-18">
+                        <a href="{{ path('viewerModeMessages') }}"><b class="p-r-10"><</b> Back to Inbox</a>
+                    </div>
+                    <div class="admin">
+                        <h4 class="p-t-20 p-b-20 font-weight-bold">Administrator</h4>
+                        <div class="row mb-n3">
+                            <div class="col-md-2"> 
+                                <img class="rounded-circle " src="{{ asset('img/categories/manga.jpg') }}" alt="">
                             </div>
-                        </div>
-                        <h4>Administrator</h4>
-                        <div class="heading">                      
-                            <div class="chat_list">
-                                <div class="row chat_people">
-                                    <div class="col-md-2 chat_img"> 
-                                        <img class="rounded-circle"  src="{{ asset('img/Captura6.png') }}" alt="">
-                                    </div>
-                                    <div class="col-md-6 chat_ib">
-                                        <h5>Charlotte Roberson</h5>
-                                        <p><span class="map">{{source('@public_path'~asset('/img/iconos/ic-map.svg')) }}Guadalupe</span></p>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="border-secondary border p-t-5  p-b-5 p-l-10"><img src="{{ asset('img/Captura19.png') }}" />Friends</div>
-                                    </div> 
-                                </div>
+                            <div class="col-md-6">
+                                <h5>Charlotte Roberson</h5>
+                                <p><span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-map.svg')) }}Guadalupe</span></p>
                             </div>
+                            <div class="col-md-4">
+                                <div class="border-secondary border p-t-5  p-b-5 p-l-10"><img src="{{ asset('img/Captura19.png') }}" />Friends</div>
+                            </div> 
                         </div>
-                        <h4>Participants</h4>
-                        <div class="inbox_chat">
-                            <div class="chat_list active_chat">
-                                <div class="chat_people">
-                                    <div class="chat_img"> 
-                                        <img class="rounded-circle"  src="{{ asset('img/Captura18.png') }}" alt="">
-                                    </div>
-                                <div class="chat_ib">
-                                    <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
-                                    <p>Test, which is a new approach to have all solutions 
-                                        astrology under one roof.
-                                    </p>
+                        <hr/>
+                    </div>
+                    <div class="participants">
+                        <h4 class="p-b-20 font-weight-bold">Participants</h4>
+                        <div class="user_chat">
+                            <div class="row mb-n3">
+                                <div class="col-md-2"> 
+                                    <img class="rounded-circle"  src="{{ asset('img/categories/fashion.jpg') }}" alt="">
                                 </div>
+                                <div class="col-md-6">
+                                    <h5>Micheal McCoy</h5>
+                                    <p><span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-map.svg')) }}Guadalupe</span></p>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="border-secondary border p-t-5  p-b-5 p-l-10"><img src="{{ asset('img/Captura19.png') }}" />Friends</div>
+                                </div> 
                             </div>
-                        </div>
-                        <div class="chat_list">
-                            <div class="chat_people">
-                                <div class="chat_img"> 
-                                    <img class="rounded-circle"  src="{{ asset('img/Captura6.png') }}" alt="">
-                                </div>
-                                <div class="chat_ib">
-                                    <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
-                                    <p>Test, which is a new approach to have all solutions 
-                                         astrology under one roof.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="chat_list">
-                            <div class="chat_people">
-                                <div class="chat_img"> 
+                            <hr/>
+                        </div> 
+                        <div class="user_chat">
+                            <div class="row mb-n3">
+                                <div class="col-md-2"> 
                                     <img class="rounded-circle"  src="{{ asset('img/Captura7.png') }}" alt="">
                                 </div>
-                                <div class="chat_ib">
-                                    <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
-                                    <p>Test, which is a new approach to have all solutions 
-                                         astrology under one roof.
-                                    </p>
+                                <div class="col-md-6">
+                                    <h5>Olga Joseph</h5>
+                                    <p><span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-map.svg')) }}Mauritania</span></p>
                                 </div>
+                                <div class="col-md-4">
+                                    <div class="border-secondary border p-t-5  p-b-5 p-l-10"><img src="{{ asset('img/Captura19.png') }}" />Friends</div>
+                                </div> 
                             </div>
-                        </div>
-                    </div>    
-                </div>
-                <div class="mesgs">
-                    <div class="msg_history">
-                        <div class="incoming_msg">
-                            <div class="incoming_msg_img"> 
-                                <img class="rounded-circle" src="{{ asset('img/Captura18.png') }}" alt=""> 
-                            </div>
-                            <div class="received_msg">
-                                <div class="received_withd_msg">
-                                    <p>Test which is a new approach to have all
-                                        solutions</p>
-                                    <span class="time_date"> 11:01 AM    |    June 9</span>
+                            <hr/>
+                        </div> 
+                        <div class="user_chat">
+                            <div class="row mb-n3">
+                                <div class="col-md-2 "> 
+                                    <img class="rounded-circle"  src="{{ asset('img/Captura5.png') }}" alt="">
                                 </div>
-                            </div>
-                        </div>
-                        <div class="outgoing_msg">
-                            <div class="sent_msg">
-                                <p>Test which is a new approach to have all
-                                solutions</p>
-                                <span class="time_date"> 11:01 AM    |    June 9</span> 
-                            </div>
-                        </div>
-                        <div class="incoming_msg">
-                            <div class="incoming_msg_img"> 
-                                <img class="rounded-circle" src="{{ asset('img/Captura18.png') }}" alt=""> 
-                            </div>
-                            <div class="received_msg">
-                                <div class="received_withd_msg">
-                                    <p>Test which is a newghjhbfhjsfbjskahfkSBFJABSFHAJF approactjdgydjydjgdjhhjhjdghjhfjh to have all
-                                        solutions</p>
-                                    <span class="time_date"> 11:01 AM    |    June 9</span>
+                                <div class="col-md-6">
+                                    <h5>Charlotte Roberson</h5>
+                                    <p><span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-map.svg')) }}Guadalupe</span></p>
                                 </div>
+                                <div class="col-md-4">
+                                    <div class="text-white text-center bgsalmon border-radius p-t-5  p-b-5">Be Friends</div>
+                                </div> 
                             </div>
-                        </div>
-                        <div class="outgoing_msg">
-                            <div class="sent_msg">
-                                <p>Test which is a neGFHAJKFHJKFBHIAJKFw approachdhdjdtjedtjtjd to have all
-                                solutions</p>
-                                <span class="time_date"> 11:01 AM    |    June 9</span> 
+                            <hr/>
+                        </div>  
+                        <div class="user_chat">
+                            <div class="row mb-n3">
+                                <div class="col-md-2"> 
+                                    <img class="rounded-circle"  src="{{ asset('img/Captura5.png') }}" alt="">
+                                </div>
+                                <div class="col-md-6">
+                                    <h5>Charlotte Roberson</h5>
+                                    <p><span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-map.svg')) }}Guadalupe</span></p>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="text-white text-center bgsalmon border-radius p-t-5  p-b-5">Be Friends</div>
+                                </div> 
                             </div>
-                        </div>
-
-                    </div>
-                    <div class="type_msg">
-                        <div class="input_msg_write">
-                            <input type="text" class="write_msg" placeholder="Type a message" />
-                            <button class="msg_send_btn" type="button"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
-                        </div>
+                            <hr/>
+                        </div>   
                     </div>
                 </div>
+                <div class="col-md-7 border-left m-t-30 m-b-30">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img class="rounded-circle" src="{{ asset('img/categories/travel.jpg') }}" alt="">
+                        </div>
+                        <div class="col-md-7 p-t-20">
+                            <div class="fs-30 font-weight-bold"><span>Just Cause 4 FINALLY</span></div>   
+                        </div>
+                        <div class="col-md-3">
+                            <div class="color_salmon p-t-25 fs-16">
+                                <a href="#">Leave group chat</a>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="search p-t-30">
+                        <form action="#" id="search" class="search d-flex flex-md-row flex-column align-items-center justify-content-between">
+                            <div class=" border d-flex flex-row align-items-center justify-content-start">
+                                {{source('@public_path'~asset('/img/iconos/ic-search.svg')) }}
+                                <input type="search" class="search_input" placeholder="Search message.." required="required">
+                                <button type="submit" hidden></button>
+                            </div>								   
+                        </form>                  
+                    </div> 
+                    {% include 'viewerMode/messages/messages_parts/templateChat.html.twig' %}
             </div>  
         </div>
     </div>

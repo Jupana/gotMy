@@ -37,10 +37,12 @@
     <div>  
         <form class="form-inline my-2 my-lg-0">
              {% if is_granted('ROLE_USER') %}
-                <div class="float-right">
-                    <a class="nav-link text-white" href="{{ path('index') }}">{{ app.user.name}}</a>       
-                    <a class="nav-link text-secondary" href="{{ path('security_logout') }}">Deconectate</a>  
-                </div> 
+                <a tabindex="0" rel="popoverViewerMode" data-placement="bottom" data-toggle="popoverViewerMode" href="#">
+                    <div class="float-right p-r-20">
+                        <span class="text-white">{{ app.user.name}}</span></br>       
+                        <span class="text-secondary">Viewer mode</span>  
+                    </div> 
+                </a>    
                 <img class="rounded-circle mr-n5" style="width:25%;" src="{{ asset('img/imgUser.jpg') }}"/>                           
             {% else %}
                 <a class="join fs-20 px-5 pt-2 pb-3 text-white float-right" href="{{ path('security_login') }}">Join gotmy for FREE</a>
@@ -108,5 +110,81 @@
             </div>                                    
         </div>         
     </div>
-</div>   
+</div> 
+
+<!-- Content for popoverViewerMode  -->
+<div class="popoverViewerMode d-none" id="popoverViewerMode_content">
+    <div class="data-content" >  
+        <div class="container">  
+            <div class="row">
+                <div class="col-md-12 viewerMode_item p-t-20 p-b-10">
+                    <div class="row">
+                        <div class="col-md-2">
+                           <span class="color_salmon">{{source('@public_path'~asset('/img/iconos/ic-user.svg')) }}</span>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="fs-15 text-dark"><span>My Viewer Profile</span></div>
+                        </div> 
+                    </div>                   
+                </div>
+                <div class="col-md-12 viewerMode_item p-t-10 p-b-10">
+                    <div class="row">
+                        <div class="col-md-2">
+                           <span class="color_salmon">{{source('@public_path'~asset('/img/iconos/ic-edit.svg')) }}</span>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="fs-15 text-dark"><span>Edit Profile</span></div>
+                        </div> 
+                    </div>                   
+                </div>
+                <div class="col-md-12 viewerMode_item p-t-10 p-b-10">
+                    <div class="row">
+                        <div class="col-md-2">
+                           <span class="color_salmon">{{source('@public_path'~asset('/img/iconos/ic-ganancia.svg')) }}</span>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="fs-15 text-dark"><span>Payment Methods</span></div>
+                        </div> 
+                    </div>                   
+                </div>
+                <div class="col-md-12 viewerMode_item p-t-10 p-b-10">
+                    <div class="row">
+                        <div class="col-md-2">
+                           <span class="color_salmon">{{source('@public_path'~asset('/img/iconos/ic-billing.svg')) }}</span>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="fs-15 text-dark"><span>Biling</span></div>
+                        </div> 
+                    </div>                   
+                </div>
+                <div class="col-md-12 viewerMode_item p-t-10 p-b-10">
+                    <div class="row">
+                        <div class="col-md-2">
+                           <span class="color_salmon">{{source('@public_path'~asset('/img/iconos/ic-settings.svg')) }}</span>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="fs-15 text-dark"><span>Settings</span></div>
+                        </div> 
+                    </div>                   
+                </div>
+                <div class="col-md-12 viewerMode_item p-t-10 p-b-10">
+                    <div class="row">
+                        <div class="col-md-2">
+                           <span class="color_salmon">{{source('@public_path'~asset('/img/iconos/ic-help.svg')) }}</span>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="fs-15 text-dark"><span>Help</span></div>
+                        </div> 
+                    </div>                   
+                </div>
+                <div class="col-md-12 p-t-10 p-b-10">
+                    <a class="join fs-20 px-5 pt-2 pb-3 text-white " href="#">Become an influencer</a>
+                </div>
+                <div class="col-md-12 p-t-10 p-b-10">
+                    <a  href="{{ path('security_logout') }}"><span class="color_salmon fs-20 m-l-30">Log Out</span></a> 
+                </div>
+            </div>                                    
+        </div>         
+    </div>
+</div> 
 

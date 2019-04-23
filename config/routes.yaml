@@ -17,7 +17,10 @@ viewerModeMessagesRequest:
     controller: App\Controller\ViewerModeController::requestMeeting   
 viewerModeViewRequestMeeting:
     path: /viewerModeMessages/viewRequestMeeting
-    controller: App\Controller\ViewerModeController::viewRequestMeeting  
+    controller: App\Controller\ViewerModeController::viewRequestMeeting 
+viewerModeMessagesCreate:  
+    path: /viewerModeMessages/createMessage
+    controller: App\Controller\ViewerModeController::createMessage 
 
 
 viewerModeEvents:

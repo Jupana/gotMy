@@ -6,24 +6,62 @@
 			{{ error.messageKey|trans(error.messageData, 'security') }}
 		</div>
 	{% endif %}
-	<div class=" m-t-20 p-t-20 p-b-20 p-l-20 p-r-20">
-		<h4  class="font-weight-bold">Ingresa</h4>
-		<form action="{{ path('security_login') }}" method="post" class="form-inline">
-			<div class="input-group m-r-10 m-t-10">
-				<input type="text" id="username" name="_username" required="required" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" 
-					value="{{ last_username }}">
+	<div class="container">
+		<div class="row p-t-30 p-b-80">
+			<div class="col-md-3 p-r-50 border-right">
+				<div class="m-t-20 p-t-20 p-b-20 ">
+					<h4  class="font-weight-bold">Login</h4>
+				</div> 
+				<form action="{{ path('security_login') }}" method="post">
+					<div class="form-group">
+						<label for="exampleInputEmail1">Username</label>
+							<input type="text" id="username" name="_username" required="required" class="border-radius form-control" placeholder="Enter username" aria-label="Username" aria-describedby="basic-addon1" 
+								value="{{ last_username }}">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputPassword1">Password</label>
+						<input type="password"  id="password" name="_password" required="required" class="border-radius form-control"  placeholder="Enter password" aria-label="password" aria-describedby="basic-addon1">
+					</div>
+					<button type="submit" class="btn bgsalmon border-radius fs-17 px-5 pt-2 pb-3 text-white float-right">Login</button>
+
+					<input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+					<input type="hidden" name="_target_path" value="{{ app.request.get('redirect_to') }}">	
+				</form>
 			</div>
-			<div class="input-group m-r-10 m-t-10">
-				<input type="password"  id="password" name="_password" required="required" class="form-control" placeholder="Contraseña" aria-label="password" aria-describedby="basic-addon1">
+			<div class="col-md-6  p-l-50 p-r-50 border-right">
+				<div class="m-t-20 p-t-20 p-b-20 ">
+					<h4  class="font-weight-bold">Sign Up</h4>
+				</div> 
+				<form>
+					<div class="form-group">
+						<label for="exampleInputEmail1">Email address</label>
+						<input type="email" class="border-radius form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputPassword1">Password</label>
+						<input type="password" class="border-radius form-control" id="exampleInputPassword1" placeholder="Password">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputPassword1">Repeat Password</label>
+						<input type="password" class="border-radius form-control" id="exampleInputPassword1" placeholder="Repeat Password">
+					</div>
+					<div class="form-group">
+						<span class="color_salmon">{{source('@public_path'~asset('/img/iconos/feedback-success.svg')) }}</span>
+						<span class="form-check-label" for="exampleCheck1">By creating account you accept the <span class="color_salmon">Term and Condicions</span> and <span class="color_salmon">Privacy Policy</span></span>
+					</div>
+					<button type="submit" class="btn bgsalmon border-radius fs-17 px-5 pt-2 pb-3 text-white float-right">Create account</button>
+				</form>
 			</div>
-			<div class="input-group m-t-10">
-				<button type="submit" id="Login" name="Login" class="btn btn-sm btn-outline-secondary">Entra en tu perfil</button>
+			<div class="col-md-3 m-t-30 m-b-30">
+				<div class="m-t-40 p-t-20 p-b-20 p-l-20 p-r-20">
+					<h4 class="font-weight-bold">Or connect with your social network</h4>
+					<div class="border  m-t-20 m-b-20"><img src="{{ asset('img/facebookConnect.png') }}" /></div>   
+					<div class="border"><img src="{{ asset('img/linkedinConnect.png') }}" /></div>   
+				</div> 
 			</div>
-			<input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
-			<input type="hidden" name="_target_path" value="{{ app.request.get('redirect_to') }}">
-		
-		</form>
-	</div> 
+		</div>
+	</div>
+
 {% endblock %}
 
 

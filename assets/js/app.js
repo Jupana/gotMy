@@ -14,6 +14,16 @@ $(function(){
   });
 });
 
+$(function(){
+  $('[rel=popoverViewerMode]').popover({ 
+    html : true ,
+    container: 'body',
+    content: function() {
+      return $('#popoverViewerMode_content').html();
+    }
+  });
+});
+
 
 // Color link en click Popap y quitar color en los demas 
 var newPopup = function (){
