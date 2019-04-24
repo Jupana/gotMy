@@ -39,6 +39,13 @@ viewerModeEvents_eventVideoId:
 viewerModeInfluencerProfil:
     path: /viewerModeInfluencerProfil/id
     controller: App\Controller\ViewerModeController::influencerProfil 
+viewerModeProfil:
+    path: /viewerModeViewerProfil
+    controller: App\Controller\ViewerModeController::ViewerProfil
+viewerModeEditProfil:  
+    path: /viewerModeViewerEditProfil
+    controller: App\Controller\ViewerModeController::ViewerEditProfil
+
 
 viewerModeChat:
     path: /viewerModeChat/id

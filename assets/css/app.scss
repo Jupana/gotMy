@@ -32,6 +32,8 @@ header {
     z-index: 10;
     top:0;
 }
+
+
 footer{
     bottom:0;
 }
@@ -78,7 +80,7 @@ textarea{
 
 
 
-/*Main Navbar*/
+/*Navbar*/
     .imglogo{ 
         width:7%;
     }
@@ -112,6 +114,11 @@ textarea{
          width:60px;
          height:35px;
      }
+     .nav_secondary{
+        width: 100%;
+        position: absolute;  
+        top:0; 
+    }
    
 /*Home*/     
 .home

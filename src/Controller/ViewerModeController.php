@@ -86,6 +86,20 @@ class ViewerModeController extends AbstractController
         ]);
     }
 
+    public function ViewerProfil()
+    {
+        return $this->render('viewerMode/profil/viewerProfil.html.twig', [
+            'controller_name' => 'VieweModeController',
+        ]);
+    }
+
+    public function ViewerEditProfil()
+    {
+        return $this->render('viewerMode/profil/viewerEditProfil.html.twig', [
+            'controller_name' => 'VieweModeController',
+        ]);
+    }
+
     public function chat()
     {
         return $this->render('viewerMode/messages/messages_parts/chat.html.twig', [

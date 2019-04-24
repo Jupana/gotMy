@@ -118,24 +118,28 @@
         <div class="container">  
             <div class="row">
                 <div class="col-md-12 viewerMode_item p-t-20 p-b-10">
-                    <div class="row">
-                        <div class="col-md-2">
-                           <span class="color_salmon">{{source('@public_path'~asset('/img/iconos/ic-user.svg')) }}</span>
-                        </div>
-                        <div class="col-md-10">
-                            <div class="fs-15 text-dark"><span>My Viewer Profile</span></div>
+                    <a href="{{ path('viewerModeProfil') }}">
+                        <div class="row">
+                            <div class="col-md-2">
+                            <span class="color_salmon">{{source('@public_path'~asset('/img/iconos/ic-user.svg')) }}</span>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="fs-15 text-dark"><span>My Viewer Profile</span></div>
+                            </div> 
                         </div> 
-                    </div>                   
+                    </a>                      
                 </div>
                 <div class="col-md-12 viewerMode_item p-t-10 p-b-10">
-                    <div class="row">
-                        <div class="col-md-2">
-                           <span class="color_salmon">{{source('@public_path'~asset('/img/iconos/ic-edit.svg')) }}</span>
+                    <a href="{{ path('viewerModeEditProfil') }}">
+                        <div class="row">
+                            <div class="col-md-2">
+                            <span class="color_salmon">{{source('@public_path'~asset('/img/iconos/ic-edit.svg')) }}</span>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="fs-15 text-dark"><span>Edit Profile</span></div>
+                            </div> 
                         </div>
-                        <div class="col-md-10">
-                            <div class="fs-15 text-dark"><span>Edit Profile</span></div>
-                        </div> 
-                    </div>                   
+                    </a>                       
                 </div>
                 <div class="col-md-12 viewerMode_item p-t-10 p-b-10">
                     <div class="row">

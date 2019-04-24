@@ -1,0 +1,73 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Viewer Profile!{% endblock %}
+
+{% block body %}
+    <div class="influencerProfil">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="p-t-20"><img class="rounded-circle border  border-secondary" src="{{ asset('img/imgUser.jpg')}}" /></div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="titulo p-t-40">{{ app.user.name}}</div>
+                            <div class="color_salmon"><h3>@{{ app.user.username}}</h3></div>
+                            <div class="row m-t-10">
+                                <div class="col-md-4">
+                                    <div class="followers"><h4>12,342<span class="color_gris p-l-10">Friends<span></h4></div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="following "><h4>1,029<span class="color_gris p-l-10">Following<span></h4></div>
+                                </div>
+                                <div class="offser-md-4"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 m-t-20">
+                            <h3>Biography</h3>
+                            <p class="p-t-10 font-weight-bold">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 m-t-50">
+                    <div class="p-t-20">
+                        <div class="location">
+                            <h3>Location</h3>
+                            <p><span class="map">{{source('@public_path'~asset('/img/iconos/ic-map.svg')) }} East Pasquaslefurt</span></p>                        
+                        </div>
+                        <div class="language">
+                            <h3>Language</h3>
+                            <p><span class="map">{{source('@public_path'~asset('/img/iconos/cl.svg')) }} English</span></p>                        
+                        </div>
+                        <div class="follow_me">
+                            <h3>Follow me</h3>
+                            <!--Aqui hai que hacer y poner los iconos de redes sociales-->
+                            <p><img src="{{ asset('img/Captura20.png') }}" /></p>                        
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <!-- Booked Events -->
+    <div class="events">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12"><p class="titulo float-left">Booked Live  Events</p></div>
+                {% include 'home/eventsCards/upcomingEvents.html.twig' %}          
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Attended Live Events -->
+    <div class="video">
+        <div class="container">
+            <div class="row">
+				<div class="col-md-12"><p class="titulo float-left">Attended Live Events</p></div>
+                {% include 'home/eventsCards/videos.html.twig' %} 
+            </div>    
+        </div>
+    </div> 
+{% endblock %}
