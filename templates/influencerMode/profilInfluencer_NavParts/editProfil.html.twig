@@ -1,0 +1,147 @@
+
+<!-- La raya color salmon esta puesta como imagen habria que cambiar--> 
+<div class="container">
+    <div class="row mt-n3">
+        <div class="col-md-4"><img src="{{ asset('img/Captura8.png') }}" /></div>      
+        <div class="col-md-4"></div>
+        <div class="col-md-4"></div>
+    </div>    
+</div>
+
+<!-- Edit Profil-->
+<div class="profilEdit p-t-30 p-b-50">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-4 text-center ">
+                        <div class="p-t-20"><img class="rounded-circle border  border-secondary" src="{{ asset('img/imgUser.jpg')}}" /></div>
+                        <div class="p-t-30">
+                            <button class="m-b-15 btn join fs-17 px-5 pt-2 pb-2 text-white" >Upload new image</button>
+                            <button class="btn border-radius bg_gris fs-17 p-l-85 p-r-85 pt-2 pb-2 text-white " >Delete</button>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <form class="p-t-30">
+                            <div class="form-group">
+                                <label for="InputName">Full name</label>
+                                <input type="text" class="border-radius form-control" id="InputName" 
+                                    value="{{ app.user.name}}">
+                            </div>
+                            <div class="form-group">
+                                <label for="InputUsername">Username</label>
+                                <input type="text" class="border-radius form-control" id="InputUsername"
+                                    value="@{{ app.user.username}}">
+                            </div>
+                            <div class="form-group">
+                                <label for="InputLocation">Location</label>
+                                <input type="text" class="border-radius form-control" id="InputLocation">
+                                <div class="mt-n4 p-l-10">
+                                    <span class="color_salmon p-r-10">{{source('@public_path'~asset('/img/iconos/ic-map.svg')) }}</span><b>French Polynesia</b>
+                                </div>
+                            </div>          
+                        </form>            
+                    </div>
+                </div>
+                <div>
+                    <h5 class="color_gris p-t-30">Biography</h5>
+                    <textarea class="p-5 w-100 font-weight-bold">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</textarea>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h1 class="p-t-20">Social networks</h1>
+                <h5 class="color_gris p-t-30">Connect with your social networks to displayng direct links and sharing your activity</h5>
+                <div class="social p-t-30">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img  src="{{ asset('img/socials/facebook.png')}}" />
+                        </div>
+                        <div class="col-md-10">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5><b>Facebook</b></h5>
+                                </div>
+                                <div class="col-md-6">
+                                    <button class="btn join p-l-35 p-r-35 text-white" >Connect</button>
+                                </div>
+                            </div> 
+                            <hr/>   
+                        </div>    
+                    </div>
+                </div>
+                <div class="social p-t-10">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img class="rounded-circle" src="{{ asset('img/socials/instagram.png')}}" />
+                        </div>
+                        <div class="col-md-10">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5><b>Instagram</b></h5>
+                                </div>
+                                <div class="col-md-6">
+                                    <button class="btn border-secondary p-r-30 p-l-4 border-radius"><img src="{{ asset('img/Captura19.png') }}" /><span>Connected</span></button>
+                                </div>
+                            </div> 
+                            <hr/>   
+                        </div>    
+                    </div>
+                </div>
+                 <div class="social p-t-10">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img class="rounded-circle" src="{{ asset('img/socials/twiter.png')}}" />
+                        </div>
+                        <div class="col-md-10">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5><b>Twiter</b></h5>
+                                </div>
+                                <div class="col-md-6">
+                                    <button class="btn border-secondary p-r-30 p-l-4 border-radius"><img src="{{ asset('img/Captura19.png') }}" /><span>Connected</span></button>
+                                </div>
+                            </div> 
+                            <hr/>   
+                        </div>    
+                    </div>
+                </div>
+                <div class="social p-t-10">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img class="rounded-circle" src="{{ asset('img/socials/youtube.png')}}" />
+                        </div>
+                        <div class="col-md-10">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5><b>Youtube</b></h5>
+                                </div>
+                                <div class="col-md-6">
+                                   <button class="btn join p-l-35 p-r-35 text-white" >Connect</button>
+                                </div>
+                            </div> 
+                            <hr/>   
+                        </div>    
+                    </div>
+                </div>
+                <div class="social p-t-10">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img  src="{{ asset('img/socials/linkedin.png')}}" />
+                        </div>
+                        <div class="col-md-10">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5><b>Linkedln</b></h5>
+                                </div>
+                                <div class="col-md-6">
+                                    <button class="btn join p-l-35 p-r-35 text-white" >Connect</button>
+                                </div>
+                            </div> 
+                            <hr/>   
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

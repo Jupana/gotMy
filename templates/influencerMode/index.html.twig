@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>{% block title %}Influencer View{% endblock %}</title>
+        <link rel="stylesheet" href="{{ asset('build/app.css') }}">
+    </head>
+    <body>  
+        <div class="super_container">                                 
+          <!-- Home -->
+            <div class="home">
+                <div class="home_slider_container">		
+                    <!-- Home Slider -->
+                    <div class="owl-carousel owl-theme home_slider">
+                        <div class="owl-item">
+                            <div class="influencer_slider_background" style="background-image:url(img/categories/vblogger.jpg);"></div>
+                            <div class="influencer_slider_content">
+                                <div class="col-md-1 m-l-20">
+                                    <a href="{{ path('index') }}">
+                                        <div class="bg-dark circle text-center">
+                                            <span class="leftArrow">{{source('@public_path'~asset('/img/iconos/left-arrow.svg')) }}</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="container mt-n5"> 
+                                    <div class="text-center fs-100 font-weight-bold">
+                                        <span class="mr-n4 text-white" >g</span>
+                                        <img class="imglogoInfluencer" src="{{ asset('Simbolo/GotMy-whiteIcon.png','imagenlogo') }}" />
+                                        <span class="ml-n4 mr-n4 text-white">t</span>
+                                        <span class="my">my</span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="offset-md-2 col-md-8 offset-md-2 text-center">
+                                            <div class="home_slider_title">Become an Influencer</div>
+                                            <div class="home_slider_subtitle">Talk face-to-face with anyone online,either in a private video meeting or live group event</div>
+                                            <div class="m-t-40 m-b-40"><a href="{{ path('influencerInfo') }}" class="join fs-20 p-l-50 p-r-50 p-t-20 p-b-20 text-white" >Get Started</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Features -->
+            <div class="features p-b-50">
+                <div class="container">
+                    <div class="row features_row ">			
+                        <!-- Features Item -->
+                        <div class="col-md-4">
+                            <div class="featureViews text-center ">
+                                <img class="feature_icon img-fluid " src="{{ asset('img/Captura3.png') }}" />
+                                <h3 class="title p-t-30 font-weight-bold">Share Your Knowledge and Experience</h3>
+                                <div class="color_gris fs-17 p-t-20 "><p>Hosting your live event is super simple with our  integrated scheduling system,payment processing,and live video chat technology</p></div>
+                                <div class="color_salmon"><a href="#">Learn more</a></div>
+                            </div>
+                        </div>
+                        <!-- Features Item -->
+                        <div class="col-md-4">
+                            <div class="featureMobil text-center">
+                                <img class="feature_icon img-fluid border border-radius" src="{{ asset('img/Captura22.png') }}" />
+                            </div>
+                        </div>
+                        <!-- Features Item -->
+                        <div class="col-md-4">
+                            <div class="featureGraphic text-center p-t-20">
+                                <img class="feature_icon img-fluid " src="{{ asset('img/Captura23.png') }}" />
+                                <h3 class="title p-t-30 font-weight-bold">Earn Money Doing What You Love</h3>
+                                <div class="color_gris fs-17 p-t-20 "><p>Manage and track your sales in real time,and manage your community through private messages and chat moderation</p></div>
+                                <div class="color_salmon"><a href="#">Learn more</a></div>
+                            </div>
+                        </div>
+                    </div>	
+                </div>
+            </div>  
+        </div>          
+        <footer>
+		    {% include 'footer/footer.html.twig' %}      
+		</footer>
+         <script src="{{ asset('build/app.js') }}"></script>
+    </body>
+</html>
