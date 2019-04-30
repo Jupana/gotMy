@@ -6,3 +6,81 @@
         <div class="col-md-4"><img src="{{ asset('img/Captura8.png') }}" /></div>
     </div>    
 </div>
+
+<div class="container">
+    <div class="row m-t-40">
+        <div class="col-md-1">
+            <div class="imgRel">
+                <img class="rounded-circle border_salmon" src="{{ asset('img/imgUser.jpg')}}" />
+                <div class="imgAbs">
+                    <img class="rounded-circle border_salmon imgWidth float-right" src="{{ asset('img/Simbolo/GotMy-Black-Avatar.jpg') }}" />
+                </div>
+            </div>    
+        </div>
+        <div class="col-md-11">
+            <h4 class="font-weight-bold">{{ app.user.name}} </h4>
+            <p>
+                <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+                <span class="map size_iconStar">{{source('@public_path'~asset('/img/iconos/ic-star.svg')) }}</span>
+            </p>
+        </div>
+    </div>
+    <div class="m-t-30 m-b-30">
+        <h1 class="font-weight-bold">Verify your Influencer Profile</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="question">
+                <h4 class="font-weight-bold p-t-20">Where are you based?</h4>
+                <div class="custom-control custom-checkbox p-t-10 p-b-10">
+                    <input type="checkbox" class="custom-control-input " id="customCheck1"checked>
+                    <label class="custom-control-label" for="customCheck1">  I'm a USA person or corporation</label>
+                </div>
+                <div class="custom-control custom-checkbox p-t-10 p-b-10">
+                    <input type="checkbox" class="custom-control-input" id="customCheck2">
+                    <label class="custom-control-label" for="customCheck2">  I'm a non-USA person or corporation</label>
+                </div>
+            </div>
+            <div class="question">
+                <h4 class="font-weight-bold p-t-20">What are you?</h4>
+                <div class="custom-control custom-checkbox p-t-10 p-b-10">
+                    <input type="checkbox" class="custom-control-input " id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">  I'm an individual</label>
+                </div>
+                <div class="custom-control custom-checkbox p-t-10 p-b-10">
+                    <input type="checkbox" class="custom-control-input" id="customCheck2"checked>
+                    <label class="custom-control-label" for="customCheck2">  I'm a corporation or represent a corporation</label>
+                </div>
+            </div>
+            <div class="question">
+                <h4 class="font-weight-bold p-t-20">What would you like to get paid?</h4>
+                <div class="custom-control custom-checkbox p-t-10 p-b-10">
+                    <input type="checkbox" class="custom-control-input " id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1"> Stripe Direct Deposit
+                        <p class="color_gris">Free is 0.25$ per payout.Manage Stripe Direct Deposit details</p>
+                    </label>
+                </div>
+                <div class="custom-control custom-checkbox p-t-10 p-b-10">
+                    <input type="checkbox" class="custom-control-input" id="customCheck2" checked>
+                    <label class="custom-control-label" for="customCheck2">  Paypal
+                        <p class="color_gris">Free is 1% of the transferred amount,with a minimum of $0.25 and a maximum of $20. Manage Paypal details.</p>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h4 class="font-weight-bold p-t-20">TAX Information</h4>
+            <p class="p-t-20">Current tax year fross earnings $35 gotmy requires W-9 forms for US-based influencers who have earned above a certain amount of money from gotmy in a given tax year. Yhis amount is $600 for influencers who reside in Masschusetts or Vermont,and $20,000 elsewhere.</p>
+            <p class="p-t-20">Fill Out W-9 form</p>
+            <a href="#"><span class="color_salmon">https://www.irs.gov/pub/irs-pdf/fw9.pdf</span></a>  
+            <div class="custom-control custom-checkbox p-t-10 p-b-10">
+                <input type="checkbox" class="custom-control-input" id="customCheck2" checked>
+                <label class="custom-control-label color_gris" for="customCheck2">By creating account you accept the
+                    <span class="color_salmon">Term and Conditions</span>and <span class="color_salmon">Privacy Policy</span>
+                </label>
+            </div>         
+        </div>
+    </div>
+</div>

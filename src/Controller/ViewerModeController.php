@@ -107,17 +107,4 @@ class ViewerModeController extends AbstractController
         ]);
     }
 
-    public function influencerView()
-    {
-        return $this->render('influencerMode/index.html.twig', [
-            'controller_name' => 'VieweModeController',
-        ]);
-    }
-
-    public function influencerInfo()
-    {
-        return $this->render('influencerMode/influencerInfo.html.twig', [
-            'controller_name' => 'VieweModeController',
-        ]);
-    }
 }

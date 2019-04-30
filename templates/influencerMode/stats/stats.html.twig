@@ -1,0 +1,15 @@
+{% extends 'baseInfluencer.html.twig' %}
+
+{% block title %}Stats{% endblock %}
+
+{% block body %}
+    <script type="text/javascript">
+     window.onload = function() {
+        document.getElementById("stats").style.color="#F75A60";
+        document.getElementById("statsT").style.color="white";
+        }
+    </script> 
+    <div class="navegacion">
+        {% include 'nav/statsInfluencerNav.html.twig' %}
+    </div>            
+{% endblock %}

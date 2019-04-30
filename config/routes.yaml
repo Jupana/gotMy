@@ -55,9 +55,14 @@ viewerModeChat:
 
 influencerView:
     path: /influencerView
-    controller: App\Controller\ViewerModeController::influencerView 
+    controller: App\Controller\InfluencerModeController::influencerView 
 influencerInfo:    
     path: /influencerInfo
-    controller: App\Controller\ViewerModeController::influencerInfo
-
+    controller: App\Controller\InfluencerModeController::influencerInfo
+influencerProfil:
+    path: /influencerProfil
+    controller: App\Controller\InfluencerModeController::influencerProfil
+influencerState:
+    path: /influencerModeState
+    controller: App\Controller\InfluencerModeController::influencerState  
 

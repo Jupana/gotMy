@@ -1,0 +1,139 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
+    <div class="navbar-brand p-l-10 fs-80 font-weight-bold">
+        <span class="mr-n4" >g</span>
+        <img class="img-fluid imglogo" src="{{ asset('Simbolo/GotMy-whiteIcon.png','imagenlogo') }}" />
+        <span class="ml-n4 mr-n4">t</span>
+        <span class="my">my</span>
+    </div> 
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse menu" id="navbarSupportedContent"> 
+        <ul class="navbar-nav  text-center">
+            <li class="nav-item" >
+                <a class="size_iconNav" href="#">{{source('@public_path'~asset('/img/iconos/ic-event.svg')) }}</a>
+                <a class="nav-link "  href="#">My Events <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item" >
+                <a class="size_iconNav"  href="#">{{source('@public_path'~asset('/img/iconos/ic-requests.svg')) }}</a>
+                <a class="nav-link" href="#">Private Meetings</a>
+            </li>
+            <li class="nav-item" >
+                <a class="size_iconNav" id="stats" href="{{ path('influencerState') }}">{{source('@public_path'~asset('/img/iconos/ic-stats.svg')) }}</a>
+                <a class="nav-link" id="statsT"href="{{ path('influencerState') }}">My Stats</a>
+            </li>
+         
+            <li class="nav-item ">
+                <a class="size_iconNav" id="op3" href="#">{{source('@public_path'~asset('/img/iconos/ic-mensajes.svg')) }}</a>
+                <a class="nav-link" id="op3t" href="#">Menssages</a>
+            </li>
+            <li class="nav-item ">
+                <a id="op4" href="#" >
+                    <span class="size_iconNav" href="#">{{source('@public_path'~asset('/img/iconos/ic-activity.svg')) }}</span>
+                    <span class="nav-link" id="op4t" href="#" >Activity</span>
+                </a>    
+            </li>
+        </ul> 
+    </div> 
+    <div class="col-md-3">  
+        <div class="row">
+            <div class="col-md-8">
+                <a tabindex="0" rel="popoverViewerMode" data-placement="bottom" data-toggle="popoverViewerMode" href="#">
+                    <div class="float-right">
+                        <span class="text-white">{{ app.user.name}}<img  src="{{ asset('img/Captura26.png' )}}" /></span></br>       
+                        <span class="text-secondary">Influencer mode</span>  
+                    </div> 
+                </a> 
+            </div>     
+            <div class="col-md-4">      
+                <div class="imgRel">
+                    <img class="float-right rounded-circle border_salmon"style="width:70%;" src="{{ asset('img/imgUser.jpg')}}" />
+                    <div class="imgAbs">
+                        <img class="rounded-circle border_salmon float-right" style="width:30%;"src="{{ asset('img/Simbolo/GotMy-Black-Avatar.jpg') }}" />
+                    </div>
+                </div>
+            </div>                                   
+        </div>  
+    </div> 
+</nav>
+
+<!-- Content for popoverViewerMode  -->
+<div class="popoverViewerMode d-none" id="popoverViewerMode_content">
+    <div class="data-content" >  
+        <div class="container">  
+            <div class="row">
+                <div class="col-md-12 viewerMode_item p-t-20 p-b-10">
+                    <a href="{{ path('viewerModeProfil') }}">
+                        <div class="row">
+                            <div class="col-md-2">
+                            <span class="color_salmon">{{source('@public_path'~asset('/img/iconos/ic-user.svg')) }}</span>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="fs-15 text-dark"><span>My Influencer Profile</span></div>
+                            </div> 
+                        </div> 
+                    </a>                      
+                </div>
+                <div class="col-md-12 viewerMode_item p-t-10 p-b-10">
+                    <a href="{{ path('viewerModeEditProfil') }}">
+                        <div class="row">
+                            <div class="col-md-2">
+                            <span class="color_salmon">{{source('@public_path'~asset('/img/iconos/ic-edit.svg')) }}</span>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="fs-15 text-dark"><span>Edit Profile</span></div>
+                            </div> 
+                        </div>
+                    </a>                       
+                </div>
+                <div class="col-md-12 viewerMode_item p-t-10 p-b-10">
+                    <div class="row">
+                        <div class="col-md-2">
+                           <span class="color_salmon">{{source('@public_path'~asset('/img/iconos/ic-ganancia.svg')) }}</span>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="fs-15 text-dark"><span>Payment Methods</span></div>
+                        </div> 
+                    </div>                   
+                </div>
+                <div class="col-md-12 viewerMode_item p-t-10 p-b-10">
+                    <div class="row">
+                        <div class="col-md-2">
+                           <span class="color_salmon">{{source('@public_path'~asset('/img/iconos/ic-billing.svg')) }}</span>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="fs-15 text-dark"><span>Biling</span></div>
+                        </div> 
+                    </div>                   
+                </div>
+                <div class="col-md-12 viewerMode_item p-t-10 p-b-10">
+                    <div class="row">
+                        <div class="col-md-2">
+                           <span class="color_salmon">{{source('@public_path'~asset('/img/iconos/ic-settings.svg')) }}</span>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="fs-15 text-dark"><span>Settings</span></div>
+                        </div> 
+                    </div>                   
+                </div>
+                <div class="col-md-12 viewerMode_item p-t-10 p-b-10">
+                    <div class="row">
+                        <div class="col-md-2">
+                           <span class="color_salmon">{{source('@public_path'~asset('/img/iconos/ic-help.svg')) }}</span>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="fs-15 text-dark"><span>Help</span></div>
+                        </div> 
+                    </div>                   
+                </div>
+                <div class="col-md-12 p-t-10 p-b-10">
+                    <a class="join fs-20 px-5 pt-2 pb-3 text-white " href="{{ path('viewerModeProfil') }}">Go to Viewer Mode</a>
+                </div>
+                <div class="col-md-12 p-t-10 p-b-10">
+                    <a  href="{{ path('security_logout') }}"><span class="color_salmon fs-20 m-l-30">Log Out</span></a> 
+                </div>
+            </div>                                    
+        </div>         
+    </div>
+</div> 
+
